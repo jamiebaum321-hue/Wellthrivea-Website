@@ -14,7 +14,7 @@ import { PageHead } from "@/components/site/page-head";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Wellthrivea is building a new kind of neighborhood health and wellness network in Canarsie, Brooklyn — thoughtful, coordinated care supported by smart technology and grounded in community.",
+    "Wellthrivea is building a new kind of neighborhood health and wellness network in Brooklyn — thoughtful, coordinated care supported by smart technology and grounded in community.",
 };
 
 const VALUES = [
@@ -59,7 +59,7 @@ const VALUES = [
 const ROADMAP = [
   {
     title: "Designing the space",
-    body: "A brand-new home base is being designed for Canarsie — bright, accessible, and built around smart-care technology from day one.",
+    body: "A brand-new Brooklyn home base is being designed — bright, accessible, and built around smart-care technology from day one.",
   },
   {
     title: "Hiring the founding team",
@@ -79,7 +79,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHead
-        badge="Coming Soon · Canarsie, Brooklyn"
+        badge="Coming Soon · Brooklyn, New York"
         title="Care that starts with community."
         sub="Wellthrivea is building a new kind of neighborhood health and wellness network — a brand-new home base, a founding care team, and technology chosen to make getting care simpler, clearer, and more human."
       />
@@ -97,7 +97,7 @@ export default function AboutPage() {
               Wellthrivea&apos;s mission is to strengthen the health of our
               community by providing accessible, coordinated, whole-person care —
               home care, wellness, behavioral health support, and telemedicine
-              — starting in Canarsie, Brooklyn, and reaching across the greater
+              — starting in Brooklyn, and reaching across the greater
               five boroughs through virtual care and outreach.
             </p>
             <p className="mt-3 text-muted-foreground">

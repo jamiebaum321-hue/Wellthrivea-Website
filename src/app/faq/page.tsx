@@ -35,7 +35,7 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
         title: "Where will you be located?",
         content: (
           <p>
-            Our first home base is coming to Canarsie, Brooklyn — the street
+            Our first home base is coming to Brooklyn — the street
             address will be published closer to launch. Virtual care and
             community outreach are planned across the greater five boroughs.
           </p>

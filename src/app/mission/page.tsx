@@ -35,7 +35,7 @@ export default function MissionPage() {
             </p>
             <p className="mt-3 text-muted-foreground">
               We&apos;re starting with the Brooklyn area, where we&apos;re
-              building our first home base in Canarsie, and reaching the
+              building our first home base, and reaching the
               greater five boroughs through virtual care and community
               outreach.
             </p>

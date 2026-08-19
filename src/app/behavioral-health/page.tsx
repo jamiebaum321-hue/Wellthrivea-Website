@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { HeartHandshake, Lock, Users, Video } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 import { Notice } from "@/components/site/notice";
 
 export const metadata: Metadata = {
@@ -37,6 +38,25 @@ const PILLARS = [
     body: "New York and federal law give mental-health information special protection — and our privacy practices are published for anyone to read.",
   },
 ];
+
+const PAGE_FAQ = [
+  {
+    value: "crisis",
+    title: "What should I do if I need help right now?",
+    content: <p>Please do not wait for us. Call or text 988 for the Suicide &amp; Crisis Lifeline — free, confidential, 24/7 — or call 911 for a life-threatening emergency. This website is not a crisis service.</p>,
+  },
+  {
+    value: "private",
+    title: "Is behavioral health information kept private?",
+    content: <p>Yes, and New York law gives mental-health information additional protection beyond standard HIPAA rules. Our Notice of Privacy Practices explains how sensitive information is handled and the authorizations required before it is shared.</p>,
+  },
+  {
+    value: "virtual",
+    title: "Will support be available virtually?",
+    content: <p>Telehealth behavioral health support is planned across the five boroughs, so care can fit around work, family, and travel realities. Details will be confirmed before the program launches.</p>,
+  },
+] as const;
+
 
 export default function BehavioralHealthPage() {
   return (
@@ -193,6 +213,7 @@ export default function BehavioralHealthPage() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about behavioral health" />
     </>
   );
 }

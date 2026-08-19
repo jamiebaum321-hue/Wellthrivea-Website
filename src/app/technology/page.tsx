@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Check, EyeOff, Lock, ShieldCheck } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 
 export const metadata: Metadata = {
   title: "Smart Care Technology",
@@ -20,6 +21,25 @@ function Tick({ children }: { children: React.ReactNode }) {
     </li>
   );
 }
+
+const PAGE_FAQ = [
+  {
+    value: "trackers",
+    title: "Does this website track me?",
+    content: <p>No. There are no advertising pixels, no third-party analytics, no session recording, and no tracking cookies on this site. Fonts are served from our own infrastructure, so visiting does not ping a third party.</p>,
+  },
+  {
+    value: "vendors",
+    title: "What happens before you add a new tool?",
+    content: <p>Any vendor that would touch visitor or patient data goes through a HIPAA review first, with a Business Associate Agreement where required, and our Digital Privacy Policy is updated before it goes live.</p>,
+  },
+  {
+    value: "prefer-people",
+    title: "What if I would rather talk to a person?",
+    content: <p>Then you will talk to a person. Digital check-in, scheduling, and messaging are designed as options that save you time — never as a barrier between you and a human being.</p>,
+  },
+] as const;
+
 
 export default function TechnologyPage() {
   return (
@@ -217,6 +237,7 @@ export default function TechnologyPage() {
           </Link>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about our technology" />
     </>
   );
 }

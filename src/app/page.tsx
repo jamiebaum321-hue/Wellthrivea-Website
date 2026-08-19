@@ -11,7 +11,6 @@ import {
   Video,
 } from "lucide-react";
 import { ExploreSplit } from "@/components/site/explore-split";
-import { FacilityCarousel } from "@/components/site/facility-carousel";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
 import { Notice } from "@/components/site/notice";
 import Accordion5 from "@/components/base-variants/accordion/accordion-5";
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
   title:
     "Wellthrivea Health & Wellness Network — Coordinated Care. Better Health.",
   description:
-    "Home care, wellness programs, behavioral health support, and telemedicine — coming soon to Canarsie, Brooklyn, and serving the greater five boroughs through virtual care and community outreach. Sign up for updates.",
+    "Home care, wellness programs, behavioral health support, and telemedicine — coming soon to Brooklyn, and serving the greater five boroughs through virtual care and community outreach. Sign up for updates.",
 };
 
 const ORG_JSONLD = {
@@ -30,11 +29,10 @@ const ORG_JSONLD = {
   alternateName: "Wellthrivea",
   slogan: "Coordinated Care. Better Health.",
   description:
-    "A health and wellness network offering home care services, wellness programs, behavioral health support, chronic disease management, and telemedicine — coming soon to Canarsie, Brooklyn, and serving the greater five boroughs through virtual care and community outreach.",
+    "A health and wellness network offering home care services, wellness programs, behavioral health support, chronic disease management, and telemedicine — coming soon to Brooklyn, and serving the greater five boroughs through virtual care and community outreach.",
   url: "https://wellthrivea.com/",
   email: "info@wellthrivea.com",
   areaServed: [
-    { "@type": "Place", name: "Canarsie, Brooklyn, NY" },
     { "@type": "Place", name: "Brooklyn, NY" },
     { "@type": "Place", name: "Queens, NY" },
     { "@type": "Place", name: "Manhattan, NY" },
@@ -49,7 +47,7 @@ const FAQ_TEASER = [
     title: "When and where are you launching?",
     content: (
       <p>
-        Our in-person home base is coming to Canarsie, Brooklyn — the address
+        Our in-person home base is coming to Brooklyn — the address
         and date will be announced here and to our email list as soon as
         they&apos;re finalized. Virtual care and community outreach are planned
         across the greater five boroughs.
@@ -128,7 +126,7 @@ export default function HomePage() {
           <div>
             <span className="inline-flex items-center gap-2.5 rounded-full border border-white/35 bg-white/15 px-4 py-2 font-heading text-sm font-bold backdrop-blur-md">
               <span className="pulse-dot size-2.5 rounded-full bg-brand-green-bright" />
-              Coming Soon · Canarsie, Brooklyn
+              Coming Soon · Brooklyn
             </span>
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] !text-white md:text-6xl">
               Coordinated care.{" "}
@@ -138,8 +136,8 @@ export default function HomePage() {
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-sky-100/85">
               Wellthrivea Health &amp; Wellness Network is bringing home care,
               wellness programs, behavioral health support, and telemedicine
-              together under one roof — coming soon to serve Canarsie, the
-              Brooklyn area, and the greater five boroughs through virtual care
+              together under one roof — coming soon to serve Brooklyn
+              and the greater five boroughs through virtual care
               and community outreach.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -158,9 +156,9 @@ export default function HomePage() {
           <div className="relative">
             <Image
               src="/img/hero-building.jpg"
-              alt="Rendering of the new Wellthrivea home base planned for Brooklyn, glowing at dusk"
-              width={1280}
-              height={723}
+              alt="The Wellthrivea Health &amp; Wellness Network storefront at dusk, its leaf-and-figures logo lit above warm, welcoming windows"
+              width={1448}
+              height={1086}
               priority
               className="rounded-3xl border border-white/15 shadow-[0_24px_70px_rgba(2,20,35,.55)]"
             />
@@ -182,7 +180,7 @@ export default function HomePage() {
               <span className="font-heading text-sm font-bold text-brand-navy">
                 Care built for community
                 <small className="block font-sans text-xs font-medium text-muted-foreground">
-                  Canarsie &amp; the five boroughs
+                  Brooklyn &amp; the five boroughs
                 </small>
               </span>
             </div>
@@ -241,27 +239,6 @@ export default function HomePage() {
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============ FACILITY TOUR (carousel-navigator module) ============ */}
-      <section className="bg-muted/60 py-20">
-        <div className="mx-auto max-w-5xl px-5">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="inline-block rounded-full bg-brand-green-soft px-4 py-1.5 font-heading text-xs font-bold uppercase tracking-[0.12em] text-brand-green">
-              Sneak peek
-            </span>
-            <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              Take the tour before the doors open.
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Concept designs for our Brooklyn home base and the experience
-              around it.
-            </p>
-          </div>
-          <div className="mt-10">
-            <FacilityCarousel />
           </div>
         </div>
       </section>
@@ -408,12 +385,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ CANARSIE ============ */}
+      {/* ============ BROOKLYN ============ */}
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <Image
-            src="/img/canarsie-street.jpg"
-            alt="Sunny tree-lined residential street in Canarsie, Brooklyn with neighbors walking and chatting"
+            src="/img/community-street.jpg"
+            alt="Sunny tree-lined residential Brooklyn street with neighbors walking and chatting"
             width={1344}
             height={752}
             className="order-2 rounded-3xl shadow-xl lg:order-1"
@@ -423,11 +400,11 @@ export default function HomePage() {
               Locations &amp; outreach
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              Rooted in Canarsie. Reaching all five boroughs.
+              Rooted in Brooklyn. Reaching all five boroughs.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Our first home base will be in Canarsie, Brooklyn — one of the
-              most wonderfully diverse neighborhoods in New York. While we
+              Our first home base will be in Brooklyn — one of the most wonderfully
+              diverse places in New York. While we
               build, we&apos;re planning virtual care and community outreach
               across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island.
             </p>

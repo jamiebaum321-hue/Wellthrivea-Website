@@ -3,17 +3,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 
 export const metadata: Metadata = {
   title: "Locations & Outreach",
   description:
-    "Wellthrivea Health & Wellness Network is coming soon to Canarsie, Brooklyn, with virtual care and community outreach across the greater five boroughs. Address and launch date will be announced.",
+    "Wellthrivea Health & Wellness Network is coming soon to Brooklyn, with virtual care and community outreach across the greater five boroughs. Address and launch date will be announced.",
 };
 
 const BOROUGHS = [
   {
     name: "Brooklyn",
-    body: "Home base. Neighborhood events, school and community partnerships, and local hiring — starting in Canarsie and East Brooklyn.",
+    body: "Home base. Neighborhood events, school and community partnerships, and local hiring — starting close to our future home base.",
   },
   {
     name: "Queens",
@@ -33,6 +34,25 @@ const BOROUGHS = [
   },
 ];
 
+const PAGE_FAQ = [
+  {
+    value: "address",
+    title: "Why isn’t the address listed?",
+    content: <p>Our Brooklyn home base is still being prepared, and we publish an address only once it is confirmed and we are ready to receive people there. The address and launch date go to our email list first.</p>,
+  },
+  {
+    value: "outside",
+    title: "Can I get care if I live outside Brooklyn?",
+    content: <p>Telemedicine and community outreach are planned across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island. In-person home care will begin in the Brooklyn area, with the service map published at launch.</p>,
+  },
+  {
+    value: "partner",
+    title: "How can my organization partner with you?",
+    content: <p>We would love to hear from schools, faith groups, community organizations, and local employers anywhere in the five boroughs. Reach out and we will plan something together.</p>,
+  },
+] as const;
+
+
 export default function LocationsPage() {
   return (
     <>
@@ -40,12 +60,12 @@ export default function LocationsPage() {
         badge="Address & launch date to be announced"
         title={
           <>
-            Coming soon to Canarsie.
+            Coming soon to Brooklyn.
             <br />
             Reaching all five boroughs.
           </>
         }
-        sub="Our first home base is being built in Canarsie, Brooklyn. While construction and hiring continue, we're planning virtual care and community outreach across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island."
+        sub="Our first home base is being built in Brooklyn. While construction and hiring continue, we're planning virtual care and community outreach across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island."
       />
 
       <section className="py-20">
@@ -55,15 +75,14 @@ export default function LocationsPage() {
               Flagship location
             </span>
             <h2 className="mt-4 flex flex-wrap items-center gap-3 text-3xl font-extrabold md:text-4xl">
-              Canarsie, Brooklyn
+              Brooklyn, New York
               <span className="rounded-full bg-brand-orange-soft px-3 py-1 font-heading text-xs font-bold uppercase tracking-wider text-amber-700">
                 Coming Soon
               </span>
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Canarsie is one of New York&apos;s most vibrant, diverse
-              neighborhoods — and it deserves modern, welcoming care close to
-              home. Our brand-new home base is being designed for this
+              Brooklyn is one of New York&apos;s most vibrant, diverse boroughs — and
+              it deserves modern, welcoming care close to home. Our brand-new home base is being designed for this
               community from the ground up: bright, accessible, and
               technology-forward.
             </p>
@@ -143,22 +162,22 @@ export default function LocationsPage() {
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <Image
-            src="/img/canarsie-street.jpg"
-            alt="Sunny residential street in Canarsie with diverse neighbors walking along tree-lined sidewalks"
+            src="/img/community-street.jpg"
+            alt="Sunny residential Brooklyn street with diverse neighbors walking along tree-lined sidewalks"
             width={1344}
             height={752}
             className="order-2 rounded-3xl shadow-xl lg:order-1"
           />
           <div className="order-1 lg:order-2">
             <span className="inline-block rounded-full bg-brand-orange-soft px-4 py-1.5 font-heading text-xs font-bold uppercase tracking-[0.12em] text-amber-700">
-              Why Canarsie
+              Why Brooklyn
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
               A neighborhood worth building for.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Canarsie is proudly diverse — home to deep Caribbean-American
-              roots and neighbors from around the world. Health care here should
+              Brooklyn is proudly diverse — home to deep Caribbean-American roots
+              and neighbors from around the world. Health care here should
               reflect the community it serves: multilingual, respectful, and
               easy to reach. That&apos;s the standard we&apos;re building to, and
               it&apos;s why our{" "}
@@ -189,6 +208,7 @@ export default function LocationsPage() {
           </Link>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about our locations" />
     </>
   );
 }

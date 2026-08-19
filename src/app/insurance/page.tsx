@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 import { Prose } from "@/components/site/prose";
 import { Notice } from "@/components/site/notice";
 
@@ -9,6 +10,25 @@ export const metadata: Metadata = {
   description:
     "How insurance and billing will work at Wellthrivea Health & Wellness Network: planned health-plan participation, coverage verification, self-pay transparency, Good Faith Estimates, and surprise-billing protections.",
 };
+
+const PAGE_FAQ = [
+  {
+    value: "which",
+    title: "Which plans will you accept?",
+    content: <p>We plan to participate with selected health plans, and the exact list will be published on this page before services launch. Coverage and network status vary by plan, so please confirm your benefits with your plan before any visit.</p>,
+  },
+  {
+    value: "gfe",
+    title: "What is a Good Faith Estimate?",
+    content: <p>If you are uninsured or choose not to use insurance, federal law gives you the right to a written estimate of expected charges before scheduled care. Our No Surprises Act page explains the right and how to use it.</p>,
+  },
+  {
+    value: "dispute",
+    title: "What if my bill is higher than expected?",
+    content: <p>If your final bill is at least $400 more than your Good Faith Estimate, you may be able to dispute it through a federal dispute-resolution process. You can also contact us directly, and we will walk through the charges with you.</p>,
+  },
+] as const;
+
 
 export default function InsurancePage() {
   return (
@@ -127,6 +147,7 @@ export default function InsurancePage() {
           </Link>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about insurance & billing" />
     </>
   );
 }

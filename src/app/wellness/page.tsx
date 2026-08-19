@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Apple, CalendarHeart, GraduationCap, HeartPulse } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 import { Notice } from "@/components/site/notice";
 
 export const metadata: Metadata = {
@@ -37,6 +38,25 @@ const OFFERINGS = [
     body: "Workshops and outreach across the five boroughs — from managing blood pressure to understanding your health coverage.",
   },
 ];
+
+const PAGE_FAQ = [
+  {
+    value: "who",
+    title: "Who are wellness visits for?",
+    content: <p>Anyone who wants to stay ahead of their health rather than react to it. Wellness visits are planned as preventive check-ins built around your goals — not a replacement for care you receive from your primary care provider.</p>,
+  },
+  {
+    value: "events",
+    title: "How do I find out about community events?",
+    content: <p>Events will be announced to our email list first, and posted on this site as they are scheduled. Organizations interested in hosting an event with us are welcome to reach out.</p>,
+  },
+  {
+    value: "cost",
+    title: "Will wellness services be covered by insurance?",
+    content: <p>Coverage for preventive and wellness services varies by plan. We will publish participating plans and any self-pay pricing before wellness services launch, so you can check before you book.</p>,
+  },
+] as const;
+
 
 export default function WellnessPage() {
   return (
@@ -119,8 +139,8 @@ export default function WellnessPage() {
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <Image
-            src="/img/canarsie-street.jpg"
-            alt="Sunny residential street in Canarsie, Brooklyn, with neighbors walking along tree-lined sidewalks"
+            src="/img/community-street.jpg"
+            alt="Sunny residential Brooklyn street with neighbors walking along tree-lined sidewalks"
             width={1344}
             height={752}
             className="order-2 rounded-3xl shadow-xl lg:order-1"
@@ -166,6 +186,7 @@ export default function WellnessPage() {
           </Link>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about wellness" />
     </>
   );
 }

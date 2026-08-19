@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/legal/anonymous-hotline",
     "/legal/accessibility",
     "/legal/terms-of-use",
+    "/legal/ai-transparency",
   ].map((path) => ({
     url: `${BASE}${path}`,
     changeFrequency: "monthly" as const,

@@ -251,19 +251,19 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "canarsie-our-future-home",
-    title: "Getting to know Canarsie: our future home",
+    slug: "our-brooklyn-neighborhood",
+    title: "Getting to know our Brooklyn neighborhood",
     categoryId: "community",
     category: "Community",
     date: "2026-07-07",
     readMinutes: 3,
     excerpt:
-      "Why we chose Canarsie for Wellthrivea's first home base — and what we're learning from the neighborhood as we build.",
+      "Why we chose Brooklyn for Wellthrivea's first home base — and what we're learning from the neighborhood as we build.",
     author: AUTHOR,
     body: [
       {
         type: "p",
-        text: "Ask New Yorkers about Canarsie and you'll hear about front gardens, block associations, and one of the deepest Caribbean-American communities in the country. It's a neighborhood of homeowners and families, of Sunday cookouts and packed church halls — proudly diverse, deeply rooted, and, like much of East Brooklyn, historically underserved by convenient, connected health care.",
+        text: "Ask New Yorkers about our corner of Brooklyn and you'll hear about front gardens, block associations, and some of the deepest Caribbean-American communities in the country. These are neighborhoods of homeowners and families, of Sunday cookouts and packed church halls — proudly diverse, deeply rooted, and, like much of the borough, historically underserved by convenient, connected health care.",
       },
       {
         type: "p",
@@ -281,7 +281,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "We'll share construction milestones, hiring news, and the address reveal with our email list first. If you live in Canarsie or anywhere in the five boroughs, we'd love to have you along for the build.",
+        text: "We'll share construction milestones, hiring news, and the address reveal with our email list first. If you live in Brooklyn or anywhere in the five boroughs, we'd love to have you along for the build.",
       },
     ],
   },

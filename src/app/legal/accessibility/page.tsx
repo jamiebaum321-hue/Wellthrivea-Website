@@ -42,7 +42,7 @@ export default function AccessibilityPage() {
 
             <h2>The physical clinic</h2>
             <p>
-              Our new building in Canarsie is being designed with accessibility
+              Our new Brooklyn home base is being designed with accessibility
               throughout — including step-free access, accessible exam rooms and
               restrooms, and clear wayfinding. Details will be published as
               construction is completed.

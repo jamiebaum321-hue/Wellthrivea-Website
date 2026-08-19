@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 import { CareersForm } from "@/components/site/careers-form";
 
 export const metadata: Metadata = {
@@ -36,6 +37,25 @@ const ROLES = [
     body: "The first voices of Wellthrivea — warm, organized, and multilingual candidates especially welcome.",
   },
 ];
+
+const PAGE_FAQ = [
+  {
+    value: "when",
+    title: "When will roles actually open?",
+    content: <p>Hiring is underway now, and formal postings with full descriptions and compensation details are being finalized. Expressing interest puts you on the list to hear first as each role opens.</p>,
+  },
+  {
+    value: "licensed",
+    title: "Do I need to be licensed in New York?",
+    content: <p>For clinical roles, yes — New York licensure or certification appropriate to the role is required. Non-clinical roles have their own requirements, which will be detailed in each posting.</p>,
+  },
+  {
+    value: "multilingual",
+    title: "Do you need multilingual staff?",
+    content: <p>Very much. We serve communities that speak many languages, and candidates who can support patients in their own language are especially welcome across every role.</p>,
+  },
+] as const;
+
 
 export default function CareersPage() {
   return (
@@ -135,6 +155,7 @@ export default function CareersPage() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about working here" />
     </>
   );
 }

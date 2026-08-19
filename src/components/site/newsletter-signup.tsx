@@ -26,12 +26,12 @@ export function NewsletterSignup() {
 
   if (done) {
     return (
-      <section className="bg-background flex w-full items-center justify-center py-16 md:py-24">
+      <section className="bg-background flex w-full items-center justify-center py-12 md:py-14">
         <div
           role="status"
-          className="mx-5 max-w-xl rounded-2xl border border-green-200 bg-brand-green-soft px-8 py-6 text-center"
+          className="mx-5 max-w-lg rounded-2xl border border-green-200 bg-brand-green-soft px-7 py-5 text-center"
         >
-          <p className="font-heading text-lg font-bold text-green-950">
+          <p className="font-heading text-base font-bold text-green-950">
             Thank you — you&apos;re on the list!
           </p>
           <p className="mt-1 text-sm text-green-900/80">
@@ -48,7 +48,7 @@ export function NewsletterSignup() {
       <Newsletter3
         badgeText="Stay Connected"
         heading="Be first through the door."
-        description="Join our email list for the opening date, the address reveal, hiring announcements, and community outreach events across the five boroughs. No health information is requested or needed — please don't include any."
+        description="Launch news, hiring announcements, and community events — straight to your inbox. Please don't include health information."
         placeholder="you@example.com"
         privacyPrefix="We'll only use your email for Wellthrivea updates, and you can unsubscribe anytime — "
         privacyLinkText="Digital Privacy Policy"

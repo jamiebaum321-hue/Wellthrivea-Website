@@ -40,24 +40,15 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-4 px-5">
-        <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Wellthrivea Health &amp; Wellness Network — home">
+        <Link href="/" className="flex shrink-0 items-center" aria-label="Wellthrivea Health &amp; Wellness Network — home">
           <Image
-            src="/img/logo-mark.png"
-            alt=""
-            width={46}
-            height={48}
-            className="h-11 w-auto"
+            src="/img/logo-lockup.png"
+            alt="Wellthrivea Health &amp; Wellness Network"
+            width={900}
+            height={297}
+            className="h-10 w-auto sm:h-12"
             priority
           />
-          <span className="leading-none">
-            <span className="font-heading text-[1.4rem] font-extrabold tracking-tight">
-              <span className="text-brand-green">Well</span>
-              <span className="text-brand-blue">thrivea</span>
-            </span>
-            <span className="mt-1 hidden text-[9px] font-bold uppercase tracking-[0.22em] text-muted-foreground sm:block">
-              Health &amp; Wellness Network
-            </span>
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Main navigation">
