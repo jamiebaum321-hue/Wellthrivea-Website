@@ -14,7 +14,7 @@ import { PageHead } from "@/components/site/page-head";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Wellthrivea is building a new kind of neighborhood urgent care in Canarsie, Brooklyn — thoughtful walk-in care supported by smart technology and grounded in community.",
+    "Wellthrivea is building a new kind of neighborhood health and wellness network in Canarsie, Brooklyn — thoughtful, coordinated care supported by smart technology and grounded in community.",
 };
 
 const VALUES = [
@@ -52,14 +52,14 @@ const VALUES = [
     icon: Users,
     tint: "text-brand-orange",
     title: "Rooted in the neighborhood",
-    body: "We're planning outreach, health education, and local hiring across the five boroughs — because a clinic should give back to the community that welcomes it.",
+    body: "We're planning outreach, health education, and local hiring across the five boroughs — because a care network should give back to the community that welcomes it.",
   },
 ];
 
 const ROADMAP = [
   {
     title: "Designing the space",
-    body: "A brand-new clinic building is being designed for Canarsie — bright, accessible, and built around smart-care technology from day one.",
+    body: "A brand-new home base is being designed for Canarsie — bright, accessible, and built around smart-care technology from day one.",
   },
   {
     title: "Hiring the founding team",
@@ -81,7 +81,7 @@ export default function AboutPage() {
       <PageHead
         badge="Coming Soon · Canarsie, Brooklyn"
         title="Care that starts with community."
-        sub="Wellthrivea is building a new kind of neighborhood urgent care — a brand-new space, a founding team, and technology chosen to make getting care simpler, clearer, and more human."
+        sub="Wellthrivea is building a new kind of neighborhood health and wellness network — a brand-new home base, a founding care team, and technology chosen to make getting care simpler, clearer, and more human."
       />
 
       <section className="py-20">
@@ -95,16 +95,16 @@ export default function AboutPage() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               Wellthrivea&apos;s mission is to strengthen the health of our
-              community by making quality care for everyday illness and injury
-              accessible, understandable, and welcoming — starting in Canarsie,
-              Brooklyn, and reaching across the greater five boroughs through
-              outreach.
+              community by providing accessible, coordinated, whole-person care —
+              home care, wellness, behavioral health support, and telemedicine
+              — starting in Canarsie, Brooklyn, and reaching across the greater
+              five boroughs through virtual care and outreach.
             </p>
             <p className="mt-3 text-muted-foreground">
-              We believe an unplanned sick day shouldn&apos;t come with confusion
-              about where to go, what it costs, or whether you&apos;ll be treated
-              with respect. Those are design problems — and we&apos;re designing
-              for them.
+              We believe getting care shouldn&apos;t come with confusion about
+              where to go, what it costs, or whether you&apos;ll be treated with
+              respect. Those are design problems — and we&apos;re designing for
+              them. Read more on our <a href="/mission" className="font-semibold text-brand-blue hover:underline">mission page</a>.
             </p>
           </div>
           <Image
@@ -169,9 +169,9 @@ export default function AboutPage() {
               they are verified — so this page will grow as the team does.
             </p>
             <ul className="mt-5 list-disc space-y-2 pl-5 text-muted-foreground">
-              <li>Physicians, physician assistants, and nurse practitioners</li>
-              <li>Registered nurses and medical assistants</li>
-              <li>Front-office and patient-experience staff</li>
+              <li>Nurses, nurse practitioners, and home health aides</li>
+              <li>Behavioral health clinicians and wellness educators</li>
+              <li>Care coordinators and patient-experience staff</li>
             </ul>
             <Link
               href="/careers"

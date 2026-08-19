@@ -7,7 +7,7 @@ import { Notice } from "@/components/site/notice";
 export const metadata: Metadata = {
   title: "Patient Rights & Responsibilities – NY",
   description:
-    "The rights and responsibilities of Wellthrivea Urgent Care patients in New York, including respect, privacy, information, billing transparency, and complaints.",
+    "The rights and responsibilities of Wellthrivea Health & Wellness Network patients in New York, including respect, privacy, information, billing transparency, and complaints.",
 };
 
 export default function PatientRightsPage() {
@@ -17,14 +17,14 @@ export default function PatientRightsPage() {
         badge="Privacy & Legal"
         title="Patient Rights & Responsibilities — New York"
         sub="Care works best as a partnership. Here's what you can expect from us — and what helps us care for you well."
-        meta="Effective date: August 19, 2026 · Wellthrivea Urgent Care"
+        meta="Effective date: August 19, 2026 · Wellthrivea Health & Wellness Network"
       />
 
       <section className="py-14">
         <div className="mx-auto max-w-7xl px-5">
           <Prose>
             <Notice variant="info" className="mb-8">
-              <strong>Status note:</strong> Wellthrivea Urgent Care is preparing
+              <strong>Status note:</strong> Wellthrivea Health & Wellness Network is preparing
               to open. These rights and responsibilities are published in
               advance and will apply to all patient care when we open. A copy
               will also be available at the clinic.
@@ -88,8 +88,8 @@ export default function PatientRightsPage() {
               </li>
               <li>
                 <strong>Advance directives.</strong> Have your health-care proxy
-                or other advance directive respected to the extent applicable in
-                an urgent-care setting.
+                or other advance directive respected to the extent applicable to
+                the services we provide.
               </li>
               <li>
                 <strong>Complain without fear.</strong> Voice complaints about
@@ -124,8 +124,8 @@ export default function PatientRightsPage() {
               </li>
               <li>
                 Use emergency services (911 / emergency department) for
-                emergencies — urgent care is not equipped for life-threatening
-                conditions.
+                emergencies — Wellthrivea provides non-emergency care and is
+                not equipped for life-threatening conditions.
               </li>
             </ul>
 

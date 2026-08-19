@@ -4,9 +4,9 @@ import { useRouter } from "next/navigation";
 import SplitButton from "@/components/watermelon-ui/split-button";
 
 const DESTINATIONS: Record<string, string> = {
-  Services: "/services",
-  Technology: "/technology",
-  Careers: "/careers",
+  "Home Care": "/home-care",
+  Wellness: "/wellness",
+  "Behavioral Health": "/behavioral-health",
 };
 
 /** Home-hero quick nav built on the watermelon "split-button" module. */

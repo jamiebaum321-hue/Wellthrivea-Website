@@ -2,60 +2,82 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
+  Activity,
+  Apple,
   Bandage,
-  FlaskConical,
-  ShieldPlus,
-  Stethoscope,
-  FileText,
+  Brain,
+  Droplets,
+  HeartPulse,
+  Home,
+  Pill,
   Video,
-  AlertTriangle,
-  Check,
 } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
 import { Notice } from "@/components/site/notice";
 
 export const metadata: Metadata = {
-  title: "Planned Services",
+  title: "What We Do — Planned Services",
   description:
-    "Planned walk-in services at Wellthrivea Urgent Care: everyday illness care, minor injuries, testing, vaccinations, physicals, and telehealth follow-up. Final services will be confirmed at opening.",
+    "Planned services from Wellthrivea Health & Wellness Network: home care, telemedicine, wellness visits, chronic disease management, medication management, wound care, IV infusion therapy, behavioral health support, and nutritional management.",
 };
 
 const SERVICES = [
   {
-    icon: Stethoscope,
+    icon: Home,
     tint: "text-brand-green",
-    title: "Everyday illness",
-    body: "Colds and flu, sore throat, cough, sinus and ear discomfort, pink eye, urinary symptoms, mild fevers, rashes, and similar non-emergency conditions.",
-  },
-  {
-    icon: Bandage,
-    tint: "text-brand-blue",
-    title: "Minor injuries",
-    body: "Minor cuts that may need attention, sprains and strains, minor burns, insect bites, and small wounds — evaluated, cleaned, and cared for.",
-  },
-  {
-    icon: FlaskConical,
-    tint: "text-brand-orange",
-    title: "On-site testing",
-    body: "Rapid testing for selected conditions (such as strep, flu, and COVID-19) and basic lab services. Your clinician will discuss which test is appropriate and how to interpret results.",
-  },
-  {
-    icon: ShieldPlus,
-    tint: "text-brand-green",
-    title: "Vaccinations",
-    body: "Routine and seasonal vaccinations, including flu shots, planned in accordance with current public-health guidance.",
-  },
-  {
-    icon: FileText,
-    tint: "text-brand-blue",
-    title: "Physicals & forms",
-    body: "School, camp, sports, and work physicals, plus help with the paperwork that goes with them.",
+    title: "Home Care Services",
+    href: "/home-care",
+    body: "Skilled, compassionate care delivered where you live — the heart of the Wellthrivea network.",
   },
   {
     icon: Video,
+    tint: "text-brand-blue",
+    title: "Telemedicine",
+    body: "Virtual visits planned across the five boroughs, with published virtual hours (Monday–Friday, 9am–5pm EST planned).",
+  },
+  {
+    icon: HeartPulse,
     tint: "text-brand-orange",
-    title: "Telehealth follow-up",
-    body: "Virtual follow-up visits for questions after your in-person visit, so recovery doesn't always require another trip.",
+    title: "Wellness Visits",
+    href: "/wellness",
+    body: "Preventive check-ins focused on keeping you well — screenings, health goals, and early conversations, not just sick care.",
+  },
+  {
+    icon: Activity,
+    tint: "text-brand-blue",
+    title: "Chronic Disease Management",
+    body: "Ongoing support for conditions like diabetes, hypertension, and asthma — coordinated between visits, not just during them.",
+  },
+  {
+    icon: Pill,
+    tint: "text-brand-green",
+    title: "Medication Management",
+    body: "Help organizing, understanding, and safely taking your medications — including reviews for interactions and duplications.",
+  },
+  {
+    icon: Bandage,
+    tint: "text-brand-orange",
+    title: "Wound Care Services",
+    body: "Skilled wound assessment, cleaning, dressing, and healing support, planned both in-home and at our future Brooklyn location.",
+  },
+  {
+    icon: Droplets,
+    tint: "text-brand-blue",
+    title: "IV Infusion Therapy",
+    body: "Clinician-administered IV therapy, planned where clinically appropriate and prescribed — details published before launch.",
+  },
+  {
+    icon: Brain,
+    tint: "text-brand-green",
+    title: "Behavioral Health Support",
+    href: "/behavioral-health",
+    body: "Judgment-free support for mental and emotional health, connected to the rest of your care.",
+  },
+  {
+    icon: Apple,
+    tint: "text-brand-orange",
+    title: "Nutritional Management",
+    body: "Practical nutrition guidance and education that fits real kitchens, real budgets, and real Brooklyn life.",
   },
 ];
 
@@ -63,100 +85,89 @@ export default function ServicesPage() {
   return (
     <>
       <PageHead
-        badge="Planned services — confirmed list published at opening"
-        title="What we plan to treat."
-        sub="Wellthrivea Urgent Care will focus on urgent, non-life-threatening illnesses and injuries. Every service below is planned; the final list of services offered at our location will be verified and published before we open."
+        badge="Planned services — each confirmed and published before launch"
+        title="What we do."
+        sub="Wellthrivea Health & Wellness Network is bringing coordinated, whole-person care to New York — at home, online, and in the community. Every service below is planned; the confirmed list will be published as services launch."
       />
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-5">
           <Notice variant="alert">
-            <strong>Emergency? Don&apos;t wait here.</strong> For chest pain,
-            difficulty breathing, stroke symptoms (face drooping, arm weakness,
-            slurred speech), severe bleeding, major trauma, or any
-            life-threatening condition, call <strong>911</strong> or go to the
-            nearest emergency department immediately.
+            <strong>Emergencies go to 911.</strong> Wellthrivea provides
+            non-emergency health and wellness services. For chest pain,
+            difficulty breathing, stroke symptoms, severe bleeding, major
+            trauma, or any life-threatening condition, call <strong>911</strong>{" "}
+            or go to the nearest emergency department. In emotional crisis, call
+            or text <strong>988</strong> for the Suicide &amp; Crisis Lifeline.
           </Notice>
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map(({ icon: Icon, tint, title, body }) => (
-              <div
-                key={title}
-                className="rounded-3xl border border-border bg-card p-7 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-              >
-                <span className={`flex size-12 items-center justify-center rounded-2xl bg-muted ${tint}`}>
-                  <Icon className="size-6" />
-                </span>
-                <h3 className="mt-5 flex flex-wrap items-center gap-2 text-lg font-bold">
-                  {title}
-                  <span className="rounded-full bg-brand-orange-soft px-2.5 py-0.5 font-heading text-[10px] font-bold uppercase tracking-wider text-amber-700">
-                    Planned
+            {SERVICES.map(({ icon: Icon, tint, title, body, href }) => {
+              const card = (
+                <>
+                  <span className={`flex size-12 items-center justify-center rounded-2xl bg-muted ${tint}`}>
+                    <Icon className="size-6" />
                   </span>
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {body}
-                </p>
-              </div>
-            ))}
+                  <h3 className="mt-5 flex flex-wrap items-center gap-2 text-lg font-bold">
+                    {title}
+                    <span className="rounded-full bg-brand-orange-soft px-2.5 py-0.5 font-heading text-[10px] font-bold uppercase tracking-wider text-amber-700">
+                      Planned
+                    </span>
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {body}
+                  </p>
+                  {href && (
+                    <span className="mt-3 inline-block font-heading text-sm font-bold text-brand-blue">
+                      Learn more →
+                    </span>
+                  )}
+                </>
+              );
+              const className =
+                "rounded-3xl border border-border bg-card p-7 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg";
+              return href ? (
+                <Link key={title} href={href} className={className}>
+                  {card}
+                </Link>
+              ) : (
+                <div key={title} className={className}>
+                  {card}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       <section className="bg-muted/60 py-20">
-        <div className="mx-auto grid max-w-7xl items-start gap-14 px-5 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <div>
             <span className="inline-block rounded-full bg-accent px-4 py-1.5 font-heading text-xs font-bold uppercase tracking-[0.12em] text-brand-blue">
-              Urgent care vs. emergency care
+              How it fits together
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              Knowing where to go matters.
+              Coordinated care means your services talk to each other.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Urgent care fills the space between a primary-care appointment you
-              can&apos;t get today and an emergency room you don&apos;t need.
-              Here&apos;s a simple guide — when in doubt about a serious symptom,
-              always choose 911 or the emergency department.
+              A wound-care nurse who knows what your chronic-disease plan says.
+              A wellness visit that flags a medication question before it
+              becomes a problem. A telemedicine follow-up that already has your
+              home-care notes. That&apos;s the network we&apos;re building —
+              one care team, connected around you.
             </p>
-            <div className="mt-7 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
-                <h3 className="font-bold text-brand-green">Urgent care can help with</h3>
-                <ul className="mt-3 space-y-2.5 text-sm text-muted-foreground">
-                  {[
-                    "Cold, flu & sore throat",
-                    "Minor cuts, sprains & strains",
-                    "Earaches & sinus pressure",
-                    "Mild fevers & rashes",
-                    "Testing, vaccines & physicals",
-                  ].map((item) => (
-                    <li key={item} className="flex gap-2.5">
-                      <Check className="mt-0.5 size-4 shrink-0 text-brand-green" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-3xl border border-border bg-card p-6 shadow-sm">
-                <h3 className="font-bold text-red-700">Call 911 / go to the ED for</h3>
-                <ul className="mt-3 space-y-2.5 text-sm text-muted-foreground">
-                  {[
-                    "Chest pain or pressure",
-                    "Difficulty breathing",
-                    "Stroke symptoms",
-                    "Severe bleeding or trauma",
-                    "Loss of consciousness",
-                  ].map((item) => (
-                    <li key={item} className="flex gap-2.5">
-                      <AlertTriangle className="mt-0.5 size-4 shrink-0 text-red-600" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            <p className="mt-3 text-muted-foreground">
+              Your information moves only with your consent and under the
+              protections described in our{" "}
+              <Link href="/legal/notice-of-privacy-practices" className="font-semibold text-brand-blue hover:underline">
+                Notice of Privacy Practices
+              </Link>
+              .
+            </p>
           </div>
           <Image
             src="/img/child-care.jpg"
-            alt="A clinician gently examining a smiling child's arm in a bright modern exam room"
+            alt="A clinician gently examining a smiling child's arm in a bright modern care room"
             width={1344}
             height={752}
             className="rounded-3xl shadow-xl"
@@ -167,11 +178,11 @@ export default function ServicesPage() {
       <section className="py-20 text-center">
         <div className="mx-auto max-w-2xl px-5">
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            Want to know the moment we open?
+            Want to know the moment services launch?
           </h2>
           <p className="mt-4 text-muted-foreground">
-            The confirmed service list, hours, and address will go to our email
-            list first.
+            The confirmed service list, virtual hours, and our Brooklyn address
+            will go to our email list first.
           </p>
           <Link
             href="/contact"

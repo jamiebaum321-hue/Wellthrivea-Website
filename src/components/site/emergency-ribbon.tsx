@@ -7,8 +7,8 @@ export function EmergencyRibbon() {
       <strong className="text-white">Medical emergency?</strong> If you are
       experiencing a life-threatening emergency, call{" "}
       <strong className="text-white">911</strong> or go to the nearest emergency
-      department. Wellthrivea Urgent Care will treat urgent,{" "}
-      <em>non-life-threatening</em> conditions.
+      department. Wellthrivea provides <em>non-emergency</em> health and
+      wellness services.
     </div>
   );
 }

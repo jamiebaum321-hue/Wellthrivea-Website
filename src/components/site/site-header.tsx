@@ -9,13 +9,13 @@ import { cn } from "@/lib/utils";
 
 const NAV = [
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/technology", label: "Technology" },
+  { href: "/services", label: "What We Do" },
+  { href: "/home-care", label: "Home Care" },
+  { href: "/behavioral-health", label: "Behavioral Health" },
+  { href: "/wellness", label: "Wellness" },
   { href: "/locations", label: "Locations" },
   { href: "/blog", label: "Blog" },
   { href: "/careers", label: "Careers" },
-  { href: "/insurance", label: "Insurance" },
-  { href: "/faq", label: "FAQ" },
 ];
 
 export function SiteHeader() {
@@ -40,7 +40,7 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between gap-4 px-5">
-        <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Wellthrivea Urgent Care — home">
+        <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Wellthrivea Health &amp; Wellness Network — home">
           <Image
             src="/img/logo-mark.png"
             alt=""
@@ -54,8 +54,8 @@ export function SiteHeader() {
               <span className="text-brand-green">Well</span>
               <span className="text-brand-blue">thrivea</span>
             </span>
-            <span className="mt-1 hidden text-[10px] font-bold uppercase tracking-[0.34em] text-muted-foreground sm:block">
-              Urgent Care
+            <span className="mt-1 hidden text-[9px] font-bold uppercase tracking-[0.22em] text-muted-foreground sm:block">
+              Health &amp; Wellness Network
             </span>
           </span>
         </Link>

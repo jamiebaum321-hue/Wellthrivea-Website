@@ -8,7 +8,7 @@ import { CopyEmail } from "@/components/site/copy-email";
 export const metadata: Metadata = {
   title: "Contact & Stay Connected",
   description:
-    "Stay connected with Wellthrivea Urgent Care — sign up for opening updates, or reach us by email, fax, or mail. Please do not include personal health information.",
+    "Stay connected with Wellthrivea Health & Wellness Network — sign up for launch updates, or reach us by email, fax, or mail. Please do not include personal health information.",
 };
 
 export default function ContactPage() {

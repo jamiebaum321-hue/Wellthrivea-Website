@@ -5,7 +5,7 @@ import { Prose } from "@/components/site/prose";
 export const metadata: Metadata = {
   title: "Non-discrimination Statement – NY",
   description:
-    "Wellthrivea Urgent Care complies with applicable federal and New York civil rights laws and does not discriminate. Free language assistance services are available.",
+    "Wellthrivea Health & Wellness Network complies with applicable federal and New York civil rights laws and does not discriminate. Free language assistance services are available.",
 };
 
 const LANGUAGE_TAGLINES: [string, string][] = [
@@ -32,8 +32,8 @@ export default function NonDiscriminationPage() {
       <PageHead
         badge="Privacy & Legal"
         title="Non-discrimination Statement — New York"
-        sub="Wellthrivea Urgent Care serves every neighbor. Discrimination has no place in health care — and no place here."
-        meta="Effective date: August 19, 2026 · Wellthrivea Urgent Care"
+        sub="Wellthrivea Health & Wellness Network serves every neighbor. Discrimination has no place in health care — and no place here."
+        meta="Effective date: August 19, 2026 · Wellthrivea Health & Wellness Network"
       />
 
       <section className="py-14">
@@ -41,7 +41,7 @@ export default function NonDiscriminationPage() {
           <Prose>
             <h2>Our commitment</h2>
             <p>
-              Wellthrivea Urgent Care complies with applicable federal civil
+              Wellthrivea Health & Wellness Network complies with applicable federal civil
               rights laws — including Section 1557 of the Affordable Care Act —
               and applicable New York State and New York City human rights laws.
               We do not discriminate, exclude people, or treat them differently
@@ -75,11 +75,10 @@ export default function NonDiscriminationPage() {
 
             <h2>If you believe we fell short</h2>
             <p>
-              If you believe Wellthrivea Urgent Care has failed to provide these
+              If you believe Wellthrivea Health & Wellness Network has failed to provide these
               services or discriminated in another way, you can file a
-              grievance with our Civil Rights Coordinator: Wellthrivea Urgent
-              Care, Attn: Civil Rights Coordinator, PO Box 1585, New York, NY
-              10163, or{" "}
+              grievance with our Civil Rights Coordinator: Wellthrivea, Attn:
+              Civil Rights Coordinator, PO Box 1585, New York, NY 10163, or{" "}
               <a href="mailto:info@wellthrivea.com">info@wellthrivea.com</a>{" "}
               (subject &quot;Civil Rights&quot;). You can file in person, by
               mail, by fax at (516) 620-3049, or by email. Help filing a

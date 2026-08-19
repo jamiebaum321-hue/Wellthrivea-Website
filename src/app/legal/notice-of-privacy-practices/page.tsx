@@ -7,7 +7,7 @@ import { Notice } from "@/components/site/notice";
 export const metadata: Metadata = {
   title: "Notice of Privacy Practices – NY",
   description:
-    "HIPAA Notice of Privacy Practices for Wellthrivea Urgent Care: how medical information about you may be used and disclosed, and how you can get access to this information.",
+    "HIPAA Notice of Privacy Practices for Wellthrivea Health & Wellness Network: how medical information about you may be used and disclosed, and how you can get access to this information.",
 };
 
 export default function NppPage() {
@@ -17,14 +17,14 @@ export default function NppPage() {
         badge="Privacy & Legal"
         title="Notice of Privacy Practices — New York"
         sub="This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully."
-        meta="Effective date: August 19, 2026 · Wellthrivea Urgent Care"
+        meta="Effective date: August 19, 2026 · Wellthrivea Health & Wellness Network"
       />
 
       <section className="py-14">
         <div className="mx-auto max-w-7xl px-5">
           <Prose>
             <Notice variant="info" className="mb-8">
-              <strong>Status note:</strong> Wellthrivea Urgent Care is preparing
+              <strong>Status note:</strong> Wellthrivea Health & Wellness Network is preparing
               to open and is not yet treating patients. This Notice of Privacy
               Practices is published in advance so our community can review it.
               It applies to protected health information we create or receive,
@@ -36,7 +36,7 @@ export default function NppPage() {
 
             <h2>Our commitment to your health information</h2>
             <p>
-              Wellthrivea Urgent Care (&quot;we,&quot; &quot;us&quot;) is
+              Wellthrivea Health & Wellness Network (&quot;we,&quot; &quot;us&quot;) is
               required by the Health Insurance Portability and Accountability
               Act of 1996 (HIPAA) to maintain the privacy and security of your
               protected health information (&quot;PHI&quot;), to give you this
@@ -204,8 +204,8 @@ export default function NppPage() {
             </p>
             <ul>
               <li>
-                <strong>With us:</strong> Privacy Officer, Wellthrivea Urgent
-                Care, PO Box 1585, New York, NY 10163, or{" "}
+                <strong>With us:</strong> Privacy Officer, Wellthrivea, PO Box
+                1585, New York, NY 10163, or{" "}
                 <a href="mailto:info@wellthrivea.com">info@wellthrivea.com</a>{" "}
                 (subject line &quot;Privacy&quot;).
               </li>
@@ -227,7 +227,7 @@ export default function NppPage() {
             <p>
               Privacy Officer
               <br />
-              Wellthrivea Urgent Care
+              Wellthrivea Health & Wellness Network
               <br />
               PO Box 1585, New York, NY 10163
               <br />

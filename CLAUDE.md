@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# Wellthrivea Urgent Care website
+# Wellthrivea Health & Wellness Network website
 
 Next.js 16 (App Router) + Tailwind v4 + shadcn/ui + Watermelon UI registry
 components. See README.md for the full site map and compliance rules.
@@ -12,10 +12,12 @@ components. See README.md for the full site map and compliance rules.
 - NEVER publish a street address until the clinic announces one.
 - NEVER add testimonials, reviews, guarantees, superiority claims ("best",
   "#1", "top", "leading"), wait-time promises, or unqualified price claims.
-- NEVER imply emergency-department status; keep 911/emergency language intact.
+- NEVER imply emergency-department or urgent-care status; Wellthrivea is a
+  health & wellness network (home care, wellness, behavioral health,
+  telemedicine). Keep 911/emergency and 988 crisis language intact.
 - NEVER add tracking scripts (analytics, pixels, session replay, chat) without
   a documented HIPAA review + BAA; update the Digital Privacy Policy if added.
-- Services/hours/providers/plans are "planned" until confirmed at opening.
+- Services/hours/providers/plans are "planned" until confirmed at launch.
 
 ## Conventions
 

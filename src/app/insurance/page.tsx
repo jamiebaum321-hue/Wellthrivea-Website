@@ -7,7 +7,7 @@ import { Notice } from "@/components/site/notice";
 export const metadata: Metadata = {
   title: "Insurance & Billing",
   description:
-    "How insurance and billing will work at Wellthrivea Urgent Care: planned health-plan participation, coverage verification, self-pay transparency, Good Faith Estimates, and surprise-billing protections.",
+    "How insurance and billing will work at Wellthrivea Health & Wellness Network: planned health-plan participation, coverage verification, self-pay transparency, Good Faith Estimates, and surprise-billing protections.",
 };
 
 export default function InsurancePage() {
@@ -16,7 +16,7 @@ export default function InsurancePage() {
       <PageHead
         badge="Participating plans published before opening"
         title="Insurance & billing, in plain language."
-        sub="Nobody should be surprised by a medical bill. Here's how coverage and costs will work at Wellthrivea Urgent Care — and the rights that protect you under federal and New York law."
+        sub="Nobody should be surprised by a medical bill. Here's how coverage and costs will work at Wellthrivea — and the rights that protect you under federal and New York law."
       />
 
       <section className="py-16">
@@ -44,8 +44,8 @@ export default function InsurancePage() {
             <h2>Hospital affiliations</h2>
             <p>
               New York requires health-care practices to disclose their hospital
-              affiliations before non-emergency services. Wellthrivea Urgent
-              Care&apos;s affiliations, if any, will be published on this page
+              affiliations before non-emergency services. Wellthrivea&apos;s
+              affiliations, if any, will be published on this page
               and stated verbally when appointments are scheduled, before we
               begin seeing patients.
             </p>

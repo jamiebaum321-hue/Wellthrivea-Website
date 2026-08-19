@@ -20,7 +20,7 @@ const PAGE_SIZE = 4;
 
 const FILTER_ICONS: Record<string, IconType> = {
   all: PiListBold,
-  "urgent-care-101": PiFirstAidKitBold,
+  "care-navigation": PiFirstAidKitBold,
   wellness: PiLeafBold,
   "smart-care": PiCpuBold,
   billing: PiReceiptBold,
@@ -29,7 +29,7 @@ const FILTER_ICONS: Record<string, IconType> = {
 
 const FILTER_ITEMS: FilterItem[] = [
   { id: "all", label: "All Topics", icon: PiListBold },
-  { id: "urgent-care-101", label: "Urgent Care 101", icon: FILTER_ICONS["urgent-care-101"] },
+  { id: "care-navigation", label: "Care Navigation", icon: FILTER_ICONS["care-navigation"] },
   { id: "wellness", label: "Wellness", icon: FILTER_ICONS.wellness },
   { id: "smart-care", label: "Smart Care", icon: FILTER_ICONS["smart-care"] },
   { id: "billing", label: "Billing & Insurance", icon: FILTER_ICONS.billing },

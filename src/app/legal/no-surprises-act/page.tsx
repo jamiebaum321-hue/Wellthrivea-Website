@@ -17,7 +17,7 @@ export default function NoSurprisesActPage() {
         badge="Privacy & Legal"
         title="Your protections against surprise medical bills"
         sub="The federal No Surprises Act and New York State law protect you from certain unexpected medical bills. This page explains those protections and your right to a Good Faith Estimate."
-        meta="Published: August 19, 2026 · Wellthrivea Urgent Care"
+        meta="Published: August 19, 2026 · Wellthrivea Health & Wellness Network"
       />
 
       <section className="py-14">
@@ -173,8 +173,8 @@ export default function NoSurprisesActPage() {
               This page summarizes protections under the federal No Surprises
               Act and New York State law. It is provided for information and
               will be maintained and updated as required. Once Wellthrivea
-              Urgent Care opens, this notice will also be provided to patients
-              as required by law.
+              begins providing services, this notice will also be provided to
+              patients as required by law.
             </p>
           </Prose>
         </div>

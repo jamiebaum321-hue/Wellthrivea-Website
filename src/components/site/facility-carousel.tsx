@@ -8,23 +8,23 @@ import { CarouselNavigator } from "@/components/watermelon-ui/carousel-navigator
 const SLIDES = [
   {
     src: "/img/hero-building.jpg",
-    alt: "Concept rendering of the new Wellthrivea Urgent Care building at dusk with green and blue lighting",
-    caption: "A brand-new building, designed for Canarsie",
+    alt: "Concept rendering of the new Wellthrivea building at dusk with green and blue lighting",
+    caption: "A brand-new Brooklyn home base, designed for Canarsie",
   },
   {
     src: "/img/lobby.jpg",
-    alt: "Bright modern urgent care lobby with digital self-check-in kiosks and a living plant wall",
-    caption: "A welcome lobby with digital self check-in",
+    alt: "Bright modern wellness center lobby with digital self-check-in kiosks and a living plant wall",
+    caption: "A welcoming wellness center with digital check-in",
   },
   {
     src: "/img/exam-room.jpg",
-    alt: "Smart exam room with a wall-mounted health dashboard display and green accent wall",
-    caption: "Smart exam rooms that keep you in the loop",
+    alt: "Modern care room with a wall-mounted health dashboard display and green accent wall",
+    caption: "Smart care rooms that keep you in the loop",
   },
   {
     src: "/img/telehealth.jpg",
-    alt: "A woman at home having a telehealth video visit with a clinician on a tablet",
-    caption: "Telehealth-ready follow-up care",
+    alt: "A woman at home having a telemedicine video visit with a clinician on a tablet",
+    caption: "Telemedicine across the five boroughs",
   },
 ];
 

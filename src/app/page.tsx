@@ -5,9 +5,9 @@ import {
   CalendarCheck,
   HeartHandshake,
   Home as HomeIcon,
+  Leaf,
   MonitorSmartphone,
   ShieldCheck,
-  Smartphone,
   Video,
 } from "lucide-react";
 import { ExploreSplit } from "@/components/site/explore-split";
@@ -17,17 +17,20 @@ import { Notice } from "@/components/site/notice";
 import Accordion5 from "@/components/base-variants/accordion/accordion-5";
 
 export const metadata: Metadata = {
-  title: "Wellthrivea Urgent Care — Coming Soon to Canarsie, Brooklyn",
+  title:
+    "Wellthrivea Health & Wellness Network — Coordinated Care. Better Health.",
   description:
-    "A new, modern walk-in urgent care for non-life-threatening illnesses and injuries is coming soon to Canarsie, Brooklyn — serving the greater five boroughs through community outreach. Sign up for opening updates.",
+    "Home care, wellness programs, behavioral health support, and telemedicine — coming soon to Canarsie, Brooklyn, and serving the greater five boroughs through virtual care and community outreach. Sign up for updates.",
 };
 
-const CLINIC_JSONLD = {
+const ORG_JSONLD = {
   "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  name: "Wellthrivea Urgent Care",
+  "@type": "MedicalOrganization",
+  name: "Wellthrivea Health & Wellness Network",
+  alternateName: "Wellthrivea",
+  slogan: "Coordinated Care. Better Health.",
   description:
-    "A new walk-in urgent care clinic for non-life-threatening illnesses and injuries, coming soon to Canarsie, Brooklyn, serving the greater five boroughs through community outreach.",
+    "A health and wellness network offering home care services, wellness programs, behavioral health support, chronic disease management, and telemedicine — coming soon to Canarsie, Brooklyn, and serving the greater five boroughs through virtual care and community outreach.",
   url: "https://wellthrivea.com/",
   email: "info@wellthrivea.com",
   areaServed: [
@@ -43,26 +46,28 @@ const CLINIC_JSONLD = {
 const FAQ_TEASER = [
   {
     value: "opening",
-    title: "When and where are you opening?",
+    title: "When and where are you launching?",
     content: (
       <p>
-        We&apos;re preparing to open in Canarsie, Brooklyn. The exact address and
-        opening date will be announced here and to our email list as soon as
-        they&apos;re finalized. We&apos;ll also serve the greater five boroughs
-        through community outreach.
+        Our in-person home base is coming to Canarsie, Brooklyn — the address
+        and date will be announced here and to our email list as soon as
+        they&apos;re finalized. Virtual care and community outreach are planned
+        across the greater five boroughs.
       </p>
     ),
   },
   {
     value: "scope",
-    title: "What will urgent care treat — and what should go to the ER?",
+    title: "What services will Wellthrivea offer?",
     content: (
       <p>
-        Urgent care is for urgent, non-life-threatening illnesses and injuries —
-        things like colds, flu, sore throats, minor cuts, and sprains. For chest
-        pain, trouble breathing, stroke symptoms, severe bleeding, or any
-        life-threatening emergency, call 911 or go to the nearest emergency
-        department.
+        Our planned services include home care, wellness visits, chronic
+        disease management, medication management, wound care, IV infusion
+        therapy, behavioral health support, nutritional management, and
+        telemedicine. Every service is confirmed and published before it
+        launches. Wellthrivea provides non-emergency care — for a
+        life-threatening emergency, always call 911 or go to the nearest
+        emergency department.
       </p>
     ),
   },
@@ -72,10 +77,11 @@ const FAQ_TEASER = [
     content: (
       <p>
         We plan to participate with selected health plans, and we will publish
-        the exact list of participating plans before opening. Coverage, network
-        status, copayments, and deductibles vary by plan — please confirm your
-        benefits with your health plan before any visit. Self-pay patients will
-        be able to request a Good Faith Estimate of expected charges.
+        the exact list of participating plans before services launch. Coverage,
+        network status, copayments, and deductibles vary by plan — please
+        confirm your benefits with your health plan before any visit. Self-pay
+        patients will be able to request a Good Faith Estimate of expected
+        charges.
       </p>
     ),
   },
@@ -85,24 +91,24 @@ const FEATURES = [
   {
     icon: HomeIcon,
     tint: "text-brand-green",
-    title: "Walk in, or plan ahead",
-    body: "Walk-in visits are planned alongside online scheduling and a virtual queue, so you can spend more of your wait at home — subject to operating hours and capacity.",
-  },
-  {
-    icon: Smartphone,
-    tint: "text-brand-blue",
-    title: "Check in digitally",
-    body: "Self-service kiosks and phone check-in are part of the design — less paperwork at the desk, more time with the people caring for you.",
+    title: "Care that comes to you",
+    body: "Home care services are at the heart of our plan — skilled, respectful care where you're most comfortable: your own home.",
   },
   {
     icon: Video,
-    tint: "text-brand-orange",
-    title: "Telehealth-ready",
-    body: "Virtual follow-ups are planned so that questions after a visit don't always mean another trip to the clinic.",
+    tint: "text-brand-blue",
+    title: "Virtual-first convenience",
+    body: "Telemedicine visits are planned across the five boroughs, so distance and mobility never have to stand between you and your care team.",
+  },
+  {
+    icon: Leaf,
+    tint: "text-brand-green",
+    title: "Whole-person wellness",
+    body: "Wellness visits, nutritional management, and behavioral health support — because health is more than treating what hurts today.",
   },
   {
     icon: ShieldCheck,
-    tint: "text-brand-green",
+    tint: "text-brand-orange",
     title: "Clear, honest billing",
     body: "Plain-language cost information, Good Faith Estimates for self-pay patients, and the surprise-billing protections you're entitled to under federal and New York law.",
   },
@@ -113,7 +119,7 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(CLINIC_JSONLD) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
       />
 
       {/* ============ HERO ============ */}
@@ -125,23 +131,23 @@ export default function HomePage() {
               Coming Soon · Canarsie, Brooklyn
             </span>
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] !text-white md:text-6xl">
-              A smarter kind of{" "}
-              <span className="brand-gradient-text">urgent care</span> is coming
-              to Brooklyn.
+              Coordinated care.{" "}
+              <span className="brand-gradient-text">Better health.</span>{" "}
+              Rooted in Brooklyn.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-sky-100/85">
-              Wellthrivea Urgent Care is building a brand-new,
-              technology-forward walk-in clinic for urgent, non-life-threatening
-              illnesses and injuries — designed around you, your time, and your
-              neighborhood. We&apos;re coming soon to serve Canarsie and the
-              greater five boroughs through community outreach.
+              Wellthrivea Health &amp; Wellness Network is bringing home care,
+              wellness programs, behavioral health support, and telemedicine
+              together under one roof — coming soon to serve Canarsie, the
+              Brooklyn area, and the greater five boroughs through virtual care
+              and community outreach.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/contact"
                 className="brand-gradient rounded-full px-7 py-3.5 font-heading font-bold text-white shadow-[0_10px_26px_rgba(0,114,188,.35)] transition-[filter] hover:brightness-110"
               >
-                Get opening updates
+                Get launch updates
               </Link>
               <div className="min-w-[260px]">
                 <ExploreSplit />
@@ -152,7 +158,7 @@ export default function HomePage() {
           <div className="relative">
             <Image
               src="/img/hero-building.jpg"
-              alt="Rendering of the new Wellthrivea Urgent Care building planned for Brooklyn, glowing at dusk"
+              alt="Rendering of the new Wellthrivea home base planned for Brooklyn, glowing at dusk"
               width={1280}
               height={723}
               priority
@@ -163,9 +169,9 @@ export default function HomePage() {
                 <CalendarCheck className="size-4.5" />
               </span>
               <span className="font-heading text-sm font-bold text-brand-navy">
-                Digital check-in
+                Virtual visits
                 <small className="block font-sans text-xs font-medium text-muted-foreground">
-                  Planned for opening day
+                  Planned Mon–Fri, 9am–5pm EST
                 </small>
               </span>
             </div>
@@ -185,8 +191,8 @@ export default function HomePage() {
 
         <div className="mx-auto grid max-w-7xl gap-3.5 px-5 pb-16 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Walk-in friendly", "Planned walk-in visits plus online scheduling, subject to hours and capacity."],
-            ["Smart technology", "Digital check-in, smart exam rooms, and telehealth-ready follow-up in the design."],
+            ["Home-first care", "Planned home care services that meet you where you live, with dignity and respect."],
+            ["Smart technology", "Telemedicine, digital scheduling, and secure records designed in from day one."],
             ["Transparent billing", "Good Faith Estimates and clear pricing information for self-pay patients."],
             ["Privacy first", "No ad pixels or analytics trackers on this website. Your visit here stays yours."],
           ].map(([title, body]) => (
@@ -211,11 +217,12 @@ export default function HomePage() {
               What we&apos;re building
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              Urgent care, rethought from the front door in.
+              One network for the health of your whole life.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              A brand-new space, a founding clinical team, and technology chosen
-              to make an unplanned sick day feel a little less stressful.
+              A founding care team, a new Brooklyn home base, and technology
+              chosen to connect your care — at home, online, and in the
+              community.
             </p>
           </div>
 
@@ -249,7 +256,8 @@ export default function HomePage() {
               Take the tour before the doors open.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Concept designs for the new building and the experience inside it.
+              Concept designs for our Brooklyn home base and the experience
+              around it.
             </p>
           </div>
           <div className="mt-10">
@@ -266,39 +274,44 @@ export default function HomePage() {
               Planned services
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              Care for the moments that can&apos;t wait for next week.
+              Care for your home, your mind, and your everyday health.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Our planned services focus on urgent, non-life-threatening
-              illnesses and injuries. The final service list will be confirmed
-              and published before we open.
+              Every service below is planned; each will be confirmed and
+              published before it launches.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
-                img: "/img/child-care.jpg",
-                alt: "A clinician in blue scrubs gently examining a smiling child's arm while the child's mother looks on",
-                title: "Everyday illness & minor injuries",
-                body: "Colds, flu, sore throats, earaches, minor cuts, sprains, and the other things that interrupt real life.",
+                img: "/img/telehealth.jpg",
+                alt: "A woman at home receiving care support through a video visit on her tablet",
+                title: "Home Care Services",
+                href: "/home-care",
+                body: "Skilled nursing, medication management, wound care, and chronic disease support — delivered where you live.",
+                cta: "Explore home care →",
               },
               {
                 img: "/img/lobby.jpg",
-                alt: "Bright modern urgent care lobby with digital self-check-in kiosks and a plant wall",
-                title: "Testing, vaccines & physicals",
-                body: "On-site rapid testing, routine vaccinations, and school, camp, and work physicals are all part of the plan.",
+                alt: "A calm, welcoming modern care space with plants and natural light",
+                title: "Behavioral Health Program",
+                href: "/behavioral-health",
+                body: "Compassionate, judgment-free behavioral health support that treats mental health as health, period.",
+                cta: "Explore behavioral health →",
               },
               {
-                img: "/img/telehealth.jpg",
-                alt: "A woman at home having a telehealth video visit with a clinician on a tablet",
-                title: "Telehealth follow-up",
-                body: "Virtual visits for follow-up questions and care coordination, designed to fit around your day.",
+                img: "/img/wellness-workshop.jpg",
+                alt: "A nutrition educator showing fresh vegetables to a diverse group at a community wellness workshop",
+                title: "Wellness Program",
+                href: "/wellness",
+                body: "Wellness visits, nutritional management, and community health education across the five boroughs.",
+                cta: "Explore wellness →",
               },
             ].map((card) => (
               <Link
                 key={card.title}
-                href="/services"
+                href={card.href}
                 className="group overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <div className="relative h-52 overflow-hidden">
@@ -321,19 +334,29 @@ export default function HomePage() {
                     {card.body}
                   </p>
                   <span className="mt-3 inline-block font-heading text-sm font-bold text-brand-blue">
-                    Explore planned services →
+                    {card.cta}
                   </span>
                 </div>
               </Link>
             ))}
           </div>
 
+          <div className="mt-8 text-center">
+            <Link
+              href="/services"
+              className="inline-block rounded-full border border-border bg-white px-7 py-3.5 font-heading font-bold text-brand-navy shadow-sm transition-colors hover:border-brand-blue hover:text-brand-blue"
+            >
+              See everything we plan to offer
+            </Link>
+          </div>
+
           <Notice variant="alert" className="mx-auto mt-10 max-w-4xl">
-            <strong>Know where to go:</strong> urgent care treats urgent,
-            non-life-threatening conditions. For chest pain, difficulty
-            breathing, stroke symptoms, severe bleeding, or any life-threatening
-            emergency, call <strong>911</strong> or go to the nearest emergency
-            department.
+            <strong>Know where to go:</strong> Wellthrivea provides
+            non-emergency health and wellness services. For chest pain,
+            difficulty breathing, stroke symptoms, severe bleeding, or any
+            life-threatening emergency, call <strong>911</strong> or go to the
+            nearest emergency department. In emotional crisis? Call or text{" "}
+            <strong>988</strong>.
           </Notice>
         </div>
       </section>
@@ -346,17 +369,17 @@ export default function HomePage() {
               Smart care technology
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              A clinic designed like it was built this decade.
+              A care network designed like it was built this decade.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Because it was. From the ground up, our new space is being
-              designed around smart, human-centered technology — not bolted on
-              afterward.
+              Because it was. From telemedicine to our future Brooklyn home
+              base, we&apos;re designing smart, human-centered technology in
+              from the start — not bolting it on afterward.
             </p>
             <ul className="mt-6 space-y-3 text-muted-foreground">
               {[
-                "Smart exam rooms with digital displays that keep you in the loop during your visit.",
-                "Electronic prescriptions planned to be sent to your preferred pharmacy before you're out the door.",
+                "Telemedicine visits planned across the five boroughs, with virtual hours published up front.",
+                "Digital scheduling and check-in designed to respect your time.",
                 "Secure digital records, so your information follows your care — not a clipboard.",
                 "A privacy-first website: no advertising pixels, no analytics trackers, no session recording.",
               ].map((item) => (
@@ -377,7 +400,7 @@ export default function HomePage() {
           </div>
           <Image
             src="/img/exam-room.jpg"
-            alt="Modern smart exam room with a wall-mounted health dashboard display and green accent wall"
+            alt="Modern smart care room with a wall-mounted health dashboard display and green accent wall"
             width={1344}
             height={752}
             className="rounded-3xl shadow-xl"
@@ -403,13 +426,13 @@ export default function HomePage() {
               Rooted in Canarsie. Reaching all five boroughs.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Our first home will be in Canarsie, Brooklyn — one of the most
-              wonderfully diverse neighborhoods in New York. While we finish
-              building, our team is planning community outreach across Brooklyn,
-              Queens, Manhattan, the Bronx, and Staten Island.
+              Our first home base will be in Canarsie, Brooklyn — one of the
+              most wonderfully diverse neighborhoods in New York. While we
+              build, we&apos;re planning virtual care and community outreach
+              across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island.
             </p>
             <p className="mt-3 text-muted-foreground">
-              The street address and opening date will be announced here and to
+              The street address and launch date will be announced here and to
               our email list first.
             </p>
             <Link
@@ -433,14 +456,14 @@ export default function HomePage() {
               Providers — coming soon.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We are actively building our founding clinical team: physicians,
-              physician assistants, nurse practitioners, nurses, medical
-              assistants, and front-office staff who know and love this
-              community. Verified provider names and credentials will be
-              published here as the team is finalized.
+              We are actively building our founding care team: nurses, nurse
+              practitioners, home health aides, behavioral health clinicians,
+              care coordinators, and wellness educators who know and love this
+              community. Verified names and credentials will be published here
+              as the team is finalized.
             </p>
             <p className="mt-3 text-muted-foreground">
-              Are you a clinician who wants to help shape a clinic from day one?
+              Want to help shape a care network from day one?
             </p>
             <Link
               href="/careers"
@@ -451,7 +474,7 @@ export default function HomePage() {
           </div>
           <Image
             src="/img/team.jpg"
-            alt="A diverse team of six healthcare professionals in blue and green scrubs smiling in a modern clinic hallway"
+            alt="A diverse team of six healthcare professionals in blue and green scrubs smiling in a modern hallway"
             width={1344}
             height={752}
             className="rounded-3xl shadow-xl"

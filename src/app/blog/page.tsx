@@ -7,7 +7,7 @@ import { NewsletterSignup } from "@/components/site/newsletter-signup";
 export const metadata: Metadata = {
   title: "Health Blog",
   description:
-    "Educational articles from Wellthrivea Urgent Care: urgent care 101, seasonal wellness, smart-care technology, billing rights, and Brooklyn community stories.",
+    "Educational articles from Wellthrivea Health & Wellness Network: care navigation, seasonal wellness, smart-care technology, billing rights, and Brooklyn community stories.",
 };
 
 export default function BlogPage() {
@@ -16,7 +16,7 @@ export default function BlogPage() {
       <PageHead
         badge="Health education from the Wellthrivea team"
         title="Read up while we build."
-        sub="Practical, plain-language health reading for the five boroughs — what urgent care does, how to stay well through NYC seasons, and the patient rights most people never hear about."
+        sub="Practical, plain-language health reading for the five boroughs — how to navigate care, how to stay well through NYC seasons, and the patient rights most people never hear about."
       />
 
       <section className="py-12">

@@ -27,7 +27,7 @@ export interface BlogPost {
 
 export const BLOG_CATEGORIES = [
   { id: "all", label: "All Topics" },
-  { id: "urgent-care-101", label: "Urgent Care 101" },
+  { id: "care-navigation", label: "Care Navigation" },
   { id: "wellness", label: "Wellness" },
   { id: "smart-care", label: "Smart Care" },
   { id: "billing", label: "Billing & Insurance" },
@@ -44,8 +44,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "urgent-care-vs-emergency-room",
     title: "Urgent care vs. the ER: how to choose in 60 seconds",
-    categoryId: "urgent-care-101",
-    category: "Urgent Care 101",
+    categoryId: "care-navigation",
+    category: "Care Navigation",
     date: "2026-08-10",
     readMinutes: 4,
     excerpt:
@@ -90,19 +90,19 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "what-to-bring-to-urgent-care",
-    title: "What to bring to an urgent care visit",
-    categoryId: "urgent-care-101",
-    category: "Urgent Care 101",
+    slug: "what-to-bring-to-a-medical-appointment",
+    title: "What to bring to any medical appointment",
+    categoryId: "care-navigation",
+    category: "Care Navigation",
     date: "2026-08-03",
     readMinutes: 3,
     excerpt:
-      "Five things that make any walk-in visit smoother — at any clinic, anywhere.",
+      "Five things that make any medical visit smoother — at any practice, anywhere.",
     author: AUTHOR,
     body: [
       {
         type: "p",
-        text: "A little preparation turns a stressful sick day into a manageable one. Whether you're visiting us after we open or any other clinic before then, this short list applies almost everywhere.",
+        text: "A little preparation turns a stressful appointment into a manageable one. Whether you're seeing your own doctor, a specialist, or a walk-in clinic, this short list applies almost everywhere.",
       },
       { type: "h2", text: "The checklist" },
       {
@@ -126,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If you don't have some of these, come anyway — clinics handle missing paperwork every day. And if your symptoms are severe or rapidly getting worse, skip the checklist and call 911 or go to the nearest emergency department.",
+        text: "If you don't have some of these, go anyway — practices handle missing paperwork every day. And if your symptoms are severe or rapidly getting worse, skip the checklist and call 911 or go to the nearest emergency department.",
       },
     ],
   },
@@ -210,7 +210,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Telehealth follow-up visits are part of Wellthrivea's planned services; details will be confirmed when we open.",
+        text: "Telemedicine is a core part of Wellthrivea's planned services; details will be confirmed before launch.",
       },
     ],
   },
@@ -258,22 +258,22 @@ export const BLOG_POSTS: BlogPost[] = [
     date: "2026-07-07",
     readMinutes: 3,
     excerpt:
-      "Why we chose Canarsie for Wellthrivea's first clinic — and what we're learning from the neighborhood as we build.",
+      "Why we chose Canarsie for Wellthrivea's first home base — and what we're learning from the neighborhood as we build.",
     author: AUTHOR,
     body: [
       {
         type: "p",
-        text: "Ask New Yorkers about Canarsie and you'll hear about front gardens, block associations, and one of the deepest Caribbean-American communities in the country. It's a neighborhood of homeowners and families, of Sunday cookouts and packed church halls — proudly diverse, deeply rooted, and, like much of East Brooklyn, historically underserved by convenient walk-in care.",
+        text: "Ask New Yorkers about Canarsie and you'll hear about front gardens, block associations, and one of the deepest Caribbean-American communities in the country. It's a neighborhood of homeowners and families, of Sunday cookouts and packed church halls — proudly diverse, deeply rooted, and, like much of East Brooklyn, historically underserved by convenient, connected health care.",
       },
       {
         type: "p",
-        text: "That last part is why we're here. When care is a long bus ride away, small problems get postponed until they're bigger ones. A neighborhood clinic — one designed around evenings-and-weekends reality rather than banker's hours — can change the math of getting seen.",
+        text: "That last part is why we're here. When care is a long bus ride away, small problems get postponed until they're bigger ones. A neighborhood care network — one that comes to your home, your screen, and your community events — can change the math of getting seen.",
       },
       { type: "h2", text: "What we're building toward" },
       {
         type: "ul",
         items: [
-          "A brand-new, accessible building designed for the neighborhood",
+          "A brand-new, accessible home base designed for the neighborhood",
           "A team that reflects the community it serves, with local hiring as a founding principle",
           "Free language assistance services, published before we open",
           "Outreach and health education across Brooklyn and the greater five boroughs",
@@ -324,26 +324,26 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "digital-check-in-what-to-expect",
-    title: "Digital check-in: what it is, and what it will look like here",
+    title: "Digital check-in and virtual queues: what they are, and what they will look like here",
     categoryId: "smart-care",
     category: "Smart Care",
     date: "2026-06-23",
     readMinutes: 3,
     excerpt:
-      "Less clipboard, more care. How modern check-in works and how we're designing ours with privacy first.",
+      "Less clipboard, more care. How modern digital check-in works and how we're designing ours with privacy first.",
     author: AUTHOR,
     body: [
       {
         type: "p",
         text: "If you've flown in the last decade, you've watched check-in move from counters to kiosks to your phone. Health care is making the same move — carefully, because health information deserves protections a boarding pass doesn't need.",
       },
-      { type: "h2", text: "How modern clinic check-in works" },
+      { type: "h2", text: "How modern check-in works" },
       {
         type: "ul",
         items: [
           "Pre-registration from your phone: identity, insurance, and consent forms completed before you arrive",
           "A virtual queue that shows your place in line, so you can wait at home instead of in a waiting room",
-          "Self-service kiosks at the door for those who prefer to do everything on site",
+          "Self-service check-in at our future Brooklyn home base for those who prefer to do everything on site",
           "Staff at the desk for anyone who would rather talk to a person — always",
         ],
       },
@@ -354,7 +354,58 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Our digital check-in tools are planned for opening day, and we'll publish details as they're finalized. The confirmed experience will be described here and in the clinic before you ever use it.",
+        text: "Our digital check-in tools are planned for launch, and we'll publish details as they're finalized. The confirmed experience will be described here before you ever use it.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-read-an-explanation-of-benefits",
+    title: "How to read an Explanation of Benefits (EOB) without a headache",
+    categoryId: "billing",
+    category: "Billing & Insurance",
+    date: "2026-08-17",
+    readMinutes: 5,
+    excerpt:
+      "That confusing document that says \"THIS IS NOT A BILL\"? It's actually one of the most useful papers in American health care — once you know how to read it.",
+    author: AUTHOR,
+    body: [
+      {
+        type: "p",
+        text: "A few weeks after almost any medical visit, an envelope (or portal notification) arrives from your health plan: the Explanation of Benefits, or EOB. Most people glance at it, see numbers that don't match anything, and file it in a drawer. That's a missed opportunity — the EOB is your plan's own accounting of what happened, and it's the single best tool for catching billing mistakes.",
+      },
+      { type: "h2", text: "First things first: it's not a bill" },
+      {
+        type: "p",
+        text: "An EOB is a report, not an invoice. It tells you what your provider charged, what your plan agreed to pay, and what — if anything — you may owe. The actual bill, if there is one, comes separately from the provider. Never pay directly from an EOB.",
+      },
+      { type: "h2", text: "The five numbers that matter" },
+      {
+        type: "ul",
+        items: [
+          "Amount billed — the provider's full charge before any insurance discounts. Often dramatically higher than what anyone actually pays.",
+          "Allowed amount — the discounted rate your plan negotiated. This is the real price for in-network care.",
+          "Plan paid — what your insurance covered.",
+          "Your responsibility — your copay, coinsurance, or deductible portion. This should match any bill the provider later sends you.",
+          "Deductible tracker — many EOBs show how much of your annual deductible you've used. Worth watching, especially late in the year.",
+        ],
+      },
+      { type: "h2", text: "Three checks worth 60 seconds" },
+      {
+        type: "ul",
+        items: [
+          "Do the dates and services match a visit you actually had? Billing errors and even fraud are often caught by patients noticing visits that never happened.",
+          "Was the claim processed in-network when you saw an in-network provider? Network processing mistakes happen and can be appealed.",
+          "Does the provider's bill match the \"your responsibility\" number? If a bill is higher than the EOB says you owe, call your plan before paying.",
+        ],
+      },
+      { type: "h2", text: "If something looks wrong" },
+      {
+        type: "p",
+        text: "Call the member-services number on your insurance card and ask them to walk through the claim line by line — they are required to explain it. If you disagree with how a claim was processed, you have the right to appeal, and the EOB itself must include instructions for doing so. New Yorkers can also get free help from Community Health Advocates at 888-614-5400.",
+      },
+      {
+        type: "p",
+        text: "One good habit: keep EOBs (paper or PDF) for at least a year. Alongside protections like Good Faith Estimates and surprise-billing laws, a small EOB file turns you from a spectator of your own health-care costs into an informed participant.",
       },
     ],
   },

@@ -17,7 +17,7 @@ export default function TermsOfUsePage() {
         badge="Privacy & Legal"
         title="Terms of Use & Medical Disclaimer"
         sub="The ground rules for using this website — most importantly, what this website is and isn't for."
-        meta="Effective date: August 19, 2026 · Wellthrivea Urgent Care"
+        meta="Effective date: August 19, 2026 · Wellthrivea Health & Wellness Network"
       />
 
       <section className="py-14">
@@ -43,7 +43,7 @@ export default function TermsOfUsePage() {
 
             <h2>2. About Wellthrivea&apos;s current status</h2>
             <p>
-              Wellthrivea Urgent Care is preparing to open and is not yet
+              Wellthrivea Health & Wellness Network is preparing to open and is not yet
               providing patient care. Services, hours, staffing, technology
               features, and health-plan participation described on the Site are
               planned and will be confirmed and updated before opening. Nothing

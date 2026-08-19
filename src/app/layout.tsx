@@ -18,13 +18,14 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://wellthrivea.com"),
   title: {
-    default: "Wellthrivea Urgent Care — Coming Soon to Canarsie, Brooklyn",
-    template: "%s | Wellthrivea Urgent Care",
+    default:
+      "Wellthrivea Health & Wellness Network — Coordinated Care. Better Health.",
+    template: "%s | Wellthrivea Health & Wellness Network",
   },
   description:
-    "A new, modern walk-in urgent care for non-life-threatening illnesses and injuries is coming soon to Canarsie, Brooklyn — serving the greater five boroughs through community outreach.",
+    "Wellthrivea Health & Wellness Network — home care, wellness programs, behavioral health support, and telemedicine. Coming soon to Canarsie, Brooklyn, and serving the greater five boroughs through virtual care and community outreach.",
   openGraph: {
-    siteName: "Wellthrivea Urgent Care",
+    siteName: "Wellthrivea Health & Wellness Network",
     type: "website",
     images: ["/img/hero-building.jpg"],
   },

@@ -9,20 +9,20 @@ import Accordion5, {
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers about Wellthrivea Urgent Care: what urgent care treats, when and where we're opening in Brooklyn, insurance, walk-ins, telehealth, careers, and how to get updates.",
+    "Answers about Wellthrivea Health & Wellness Network: planned services, home care, behavioral health, wellness, insurance, telemedicine, careers, and how to get launch updates.",
 };
 
 const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
   {
-    heading: "About the opening",
+    heading: "About the launch",
     items: [
       {
         value: "when-open",
-        title: "When do you open?",
+        title: "When do you launch?",
         content: (
           <p>
-            We&apos;re actively building and hiring now. The opening date will
-            be announced on this site and to our{" "}
+            We&apos;re actively building and hiring now. Launch dates for each
+            service will be announced on this site and to our{" "}
             <Link href="/contact" className="font-semibold text-brand-blue hover:underline">
               email list
             </Link>{" "}
@@ -32,12 +32,12 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
       },
       {
         value: "where",
-        title: "Where exactly will you be located?",
+        title: "Where will you be located?",
         content: (
           <p>
-            Our first clinic is coming to Canarsie, Brooklyn. The street address
-            will be published closer to opening. We&apos;ll also serve the
-            greater five boroughs through community outreach programs.
+            Our first home base is coming to Canarsie, Brooklyn — the street
+            address will be published closer to launch. Virtual care and
+            community outreach are planned across the greater five boroughs.
           </p>
         ),
       },
@@ -46,11 +46,11 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
         title: "Who are your providers?",
         content: (
           <p>
-            Our founding clinical team is being hired now. In keeping with New
-            York professional advertising rules, we publish provider names,
-            credentials, and board certifications only after they are verified —
-            so check back as the team grows. Clinicians interested in joining
-            can visit our{" "}
+            Our founding care team is being hired now. In keeping with New York
+            professional advertising rules, we publish provider names,
+            credentials, and certifications only after they are verified — so
+            check back as the team grows. Clinicians interested in joining can
+            visit our{" "}
             <Link href="/careers" className="font-semibold text-brand-blue hover:underline">
               careers page
             </Link>
@@ -61,56 +61,67 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
     ],
   },
   {
-    heading: "About urgent care",
+    heading: "About our services",
     items: [
       {
-        value: "treats",
-        title: "What does urgent care treat?",
+        value: "services",
+        title: "What services will Wellthrivea offer?",
         content: (
           <p>
-            Urgent care is for urgent, non-life-threatening illnesses and
-            injuries — colds and flu, sore throats, earaches, minor cuts,
-            sprains, mild fevers, rashes, and similar conditions. See our{" "}
+            Our planned services include{" "}
+            <Link href="/home-care" className="font-semibold text-brand-blue hover:underline">
+              home care
+            </Link>
+            , telemedicine, wellness visits, chronic disease management,
+            medication management, wound care, IV infusion therapy,{" "}
+            <Link href="/behavioral-health" className="font-semibold text-brand-blue hover:underline">
+              behavioral health support
+            </Link>
+            , and nutritional management. See{" "}
             <Link href="/services" className="font-semibold text-brand-blue hover:underline">
-              planned services
+              What We Do
+            </Link>{" "}
+            — each service is confirmed and published before it launches.
+          </p>
+        ),
+      },
+      {
+        value: "emergencies",
+        title: "Do you handle emergencies?",
+        content: (
+          <p>
+            No. Wellthrivea provides non-emergency health and wellness
+            services. For chest pain, difficulty breathing, stroke symptoms,
+            severe bleeding, major trauma, or any life-threatening condition,
+            call <strong>911</strong> or go to the nearest emergency department
+            immediately. If you are in emotional distress or crisis, call or
+            text <strong>988</strong> for the Suicide &amp; Crisis Lifeline.
+          </p>
+        ),
+      },
+      {
+        value: "home-care-area",
+        title: "Where will home care be available?",
+        content: (
+          <p>
+            Home care is planned to begin in the Brooklyn area, with the exact
+            service map published at launch. Virtual support is planned across
+            the greater five boroughs. Details on our{" "}
+            <Link href="/home-care" className="font-semibold text-brand-blue hover:underline">
+              Home Care page
             </Link>
             .
           </p>
         ),
       },
       {
-        value: "er",
-        title: "When should I go to the emergency department instead?",
-        content: (
-          <p>
-            For chest pain or pressure, difficulty breathing, stroke symptoms
-            (face drooping, arm weakness, slurred speech), severe bleeding,
-            major trauma, loss of consciousness, or any condition that could be
-            life-threatening — call <strong>911</strong> or go to the nearest
-            emergency department immediately. Urgent care is not an emergency
-            room.
-          </p>
-        ),
-      },
-      {
-        value: "walk-in",
-        title: "Will I be able to walk in, or do I need an appointment?",
-        content: (
-          <p>
-            Both are planned: walk-in visits and online scheduling with a
-            virtual queue, subject to operating hours and capacity. Final
-            details will be published before opening.
-          </p>
-        ),
-      },
-      {
         value: "telehealth",
-        title: "Will you offer telehealth?",
+        title: "Will you offer telemedicine?",
         content: (
           <p>
-            Telehealth follow-up visits are part of our plan, so questions
-            during recovery don&apos;t always require another trip to the
-            clinic. Details will be confirmed at opening.
+            Yes — telemedicine is a core part of the plan, with planned virtual
+            hours of Monday–Friday, 9am–5pm EST. Final details will be
+            published before launch.
           </p>
         ),
       },
@@ -129,8 +140,8 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
             <Link href="/insurance" className="font-semibold text-brand-blue hover:underline">
               Insurance &amp; Billing page
             </Link>{" "}
-            before we open. Coverage varies by plan, so please confirm your
-            benefits with your health plan before any visit.
+            before services launch. Coverage varies by plan, so please confirm
+            your benefits with your health plan before any visit.
           </p>
         ),
       },
@@ -144,7 +155,7 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
               Good Faith Estimate
             </Link>{" "}
             of expected charges before you receive care, and self-pay pricing
-            information will be published before opening.
+            information will be published before launch.
           </p>
         ),
       },
@@ -177,8 +188,10 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
               Notice of Privacy Practices
             </Link>{" "}
             explains how medical information may be used and disclosed and the
-            rights you have over it. This website itself carries no advertising
-            pixels, analytics trackers, or session recording — see the{" "}
+            rights you have over it — including the special protections New
+            York gives behavioral health information. This website itself
+            carries no advertising pixels, analytics trackers, or session
+            recording — see the{" "}
             <Link href="/legal/digital-privacy-policy" className="font-semibold text-brand-blue hover:underline">
               Digital Privacy Policy
             </Link>
@@ -223,8 +236,9 @@ const GROUPS: { heading: string; items: Accordion5Item[] }[] = [
         title: "Are you hiring?",
         content: (
           <p>
-            Yes — physicians, PAs, NPs, RNs, medical assistants, and
-            front-office staff for our founding team. Visit{" "}
+            Yes — nurses, nurse practitioners, home health aides, behavioral
+            health clinicians, wellness educators, and care coordinators for
+            our founding team. Visit{" "}
             <Link href="/careers" className="font-semibold text-brand-blue hover:underline">
               Careers
             </Link>{" "}
@@ -256,7 +270,7 @@ export default function FaqPage() {
       <PageHead
         badge="Questions & answers"
         title="Frequently asked questions."
-        sub="Everything we can answer today about Wellthrivea Urgent Care — and honest &quot;we'll announce it&quot; answers where details are still being finalized."
+        sub="Everything we can answer today about Wellthrivea Health &amp; Wellness Network — and honest &quot;we'll announce it&quot; answers where details are still being finalized."
       />
 
       <section className="py-16">

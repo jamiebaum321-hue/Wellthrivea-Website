@@ -7,7 +7,7 @@ import { PageHead } from "@/components/site/page-head";
 export const metadata: Metadata = {
   title: "Smart Care Technology",
   description:
-    "How Wellthrivea Urgent Care is designing technology around patients: digital check-in, smart exam rooms, telehealth-ready visits, and a privacy-first website with no ad trackers.",
+    "How Wellthrivea Health & Wellness Network is designing technology around patients: telemedicine, digital scheduling, smart care rooms, and a privacy-first website with no ad trackers.",
 };
 
 function Tick({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export default function TechnologyPage() {
   return (
     <>
       <PageHead
-        badge="In design — arriving with our opening"
+        badge="In design — arriving with our launch"
         title="Smart technology, human care."
         sub="We're designing Wellthrivea around technology that removes friction from getting care — while keeping your privacy and your dignity at the center. Here's what we're building toward."
       />
@@ -78,7 +78,7 @@ export default function TechnologyPage() {
           />
           <div className="order-1 lg:order-2">
             <span className="inline-block rounded-full bg-brand-green-soft px-4 py-1.5 font-heading text-xs font-bold uppercase tracking-[0.12em] text-brand-green">
-              In the clinic
+              At our home base
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
               A building designed this decade, for this decade.

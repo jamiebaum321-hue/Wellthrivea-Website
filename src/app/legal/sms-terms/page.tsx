@@ -17,7 +17,7 @@ export default function SmsTermsPage() {
         badge="Privacy & Legal"
         title="SMS Terms of Use"
         sub="These terms govern text messages from Wellthrivea. Texting is always optional, always consent-based, and never used for personal health details."
-        meta="Effective date: August 19, 2026 · Wellthrivea Urgent Care"
+        meta="Effective date: August 19, 2026 · Wellthrivea Health & Wellness Network"
       />
 
       <section className="py-14">

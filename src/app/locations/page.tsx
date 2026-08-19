@@ -7,7 +7,7 @@ import { PageHead } from "@/components/site/page-head";
 export const metadata: Metadata = {
   title: "Locations & Outreach",
   description:
-    "Wellthrivea Urgent Care is coming soon to Canarsie, Brooklyn, with community outreach across the greater five boroughs. Address and opening date will be announced.",
+    "Wellthrivea Health & Wellness Network is coming soon to Canarsie, Brooklyn, with virtual care and community outreach across the greater five boroughs. Address and launch date will be announced.",
 };
 
 const BOROUGHS = [
@@ -37,7 +37,7 @@ export default function LocationsPage() {
   return (
     <>
       <PageHead
-        badge="Address & opening date to be announced"
+        badge="Address & launch date to be announced"
         title={
           <>
             Coming soon to Canarsie.
@@ -45,7 +45,7 @@ export default function LocationsPage() {
             Reaching all five boroughs.
           </>
         }
-        sub="Our first clinic is being built in Canarsie, Brooklyn. While construction and hiring continue, we're planning community outreach across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island."
+        sub="Our first home base is being built in Canarsie, Brooklyn. While construction and hiring continue, we're planning virtual care and community outreach across Brooklyn, Queens, Manhattan, the Bronx, and Staten Island."
       />
 
       <section className="py-20">
@@ -62,16 +62,16 @@ export default function LocationsPage() {
             </h2>
             <p className="mt-4 text-muted-foreground">
               Canarsie is one of New York&apos;s most vibrant, diverse
-              neighborhoods — and it deserves modern, welcoming walk-in care
-              close to home. Our brand-new clinic is being designed for this
+              neighborhoods — and it deserves modern, welcoming care close to
+              home. Our brand-new home base is being designed for this
               community from the ground up: bright, accessible, and
               technology-forward.
             </p>
             <ul className="mt-6 space-y-3">
               {[
-                "Street address announced closer to opening",
-                "Hours published before opening day",
-                "Walk-in visits planned, plus online scheduling",
+                "Street address announced closer to launch",
+                "Hours published before launch day",
+                "Home care and virtual visits planned, plus online scheduling",
                 "Accessible design throughout the building",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-muted-foreground">
@@ -91,7 +91,7 @@ export default function LocationsPage() {
           </div>
           <Image
             src="/img/hero-building.jpg"
-            alt="Concept rendering of the new Wellthrivea Urgent Care building at dusk with green and blue lighting"
+            alt="Concept rendering of the new Wellthrivea building at dusk with green and blue lighting"
             width={1920}
             height={1085}
             className="rounded-3xl shadow-xl"
@@ -109,7 +109,7 @@ export default function LocationsPage() {
               The greater five boroughs, before day one.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              A clinic can open its doors long after it starts serving its
+              A care network can open its doors long after it starts serving its
               community. Our outreach team is planning health education,
               screening events, and partnerships across New York City.
             </p>
@@ -178,7 +178,7 @@ export default function LocationsPage() {
             Be the first to know where and when.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            The address and opening date go to our email list before anywhere
+            The address and launch date go to our email list before anywhere
             else.
           </p>
           <Link

@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 import { submitWtForm } from "@/lib/site-config";
 
 const ROLES = [
-  "Physician (MD/DO)",
-  "Physician Assistant",
-  "Nurse Practitioner",
   "Registered Nurse",
-  "Medical Assistant",
-  "Front Office / Patient Experience",
+  "Nurse Practitioner",
+  "Home Health Aide / LPN",
+  "Behavioral Health Clinician",
+  "Wellness / Nutrition Educator",
+  "Care Coordination / Patient Experience",
   "Other",
 ];
 

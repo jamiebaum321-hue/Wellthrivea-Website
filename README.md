@@ -1,8 +1,10 @@
-# Wellthrivea Urgent Care — Website
+# Wellthrivea Health & Wellness Network — Website
 
-A modern, compliance-first website for **Wellthrivea Urgent Care**, coming soon
-to Canarsie, Brooklyn, serving the greater five boroughs through community
-outreach.
+A modern, compliance-first website for **Wellthrivea Health & Wellness
+Network** ("Coordinated Care. Better Health.") — home care, wellness programs,
+behavioral health support, and telemedicine, coming soon to Canarsie,
+Brooklyn, and serving the greater five boroughs through virtual care and
+community outreach.
 
 Built with **Next.js 16 (App Router) + Tailwind CSS v4 + shadcn/ui**, using
 components from the [Watermelon UI](https://registry.watermelon.sh) shadcn
@@ -21,26 +23,28 @@ npm run start   # serve the production build
 
 | Section | Routes |
 | --- | --- |
-| Core | `/` `/about` `/services` `/technology` `/locations` `/careers` `/insurance` `/faq` `/contact` |
-| Blog | `/blog` plus 8 educational articles at `/blog/[slug]` |
+| Core | `/` `/about` `/mission` `/services` `/home-care` `/behavioral-health` `/wellness` `/technology` `/locations` `/careers` `/insurance` `/faq` `/contact` |
+| Blog | `/blog` plus 9 educational articles at `/blog/[slug]` |
 | Legal | `/legal/digital-privacy-policy` `/legal/no-surprises-act` `/legal/notice-of-privacy-practices` `/legal/sms-terms` `/legal/non-discrimination` `/legal/patient-rights` `/legal/anonymous-hotline` `/legal/accessibility` `/legal/terms-of-use` |
 
-## Compliance posture (NY urgent care)
+## Compliance posture (NY health services)
 
 This site was built against a New York urgent-care website compliance review.
 Key decisions — please keep these intact when editing:
 
 - **No "integrated provider" / "integrated care" language anywhere.** The
-  NY health department required its removal from the prior site.
+  NY health department required its removal from the prior site. The brand
+  tagline is "Coordinated Care. Better Health." (from the current logo).
 - **No street address is published.** The site says "coming soon to Canarsie,
   Brooklyn" and "serving the greater five boroughs through outreach" only.
 - **No testimonials, no guarantees, no superiority claims** ("best", "#1",
   "top"), no wait-time promises, no price claims — per NY Education Law
   § 6530(27) and Board of Regents Part 29.1.
 - **Emergency/911 language** appears in the top ribbon, footer, services,
-  FAQ, and every blog article.
+  FAQ, and every blog article; behavioral health pages also carry the 988
+  Suicide & Crisis Lifeline notice.
 - All services/hours/staffing/plan participation are labeled **planned** and
-  will be confirmed before opening; provider names publish only once verified.
+  will be confirmed before launch; provider names publish only once verified.
 - **Good Faith Estimate** notice is displayed site-wide above the footer;
   balance-billing protections are on `/legal/no-surprises-act`.
 - **HIPAA NPP** (`/legal/notice-of-privacy-practices`) is separate from the
@@ -91,7 +95,7 @@ body text uses Inter (both self-hosted via `next/font`).
 Photography in `public/img/` was generated with the OpenAI GPT Image 2 engine
 (via Higgsfield) using the brand palette; images depicting people were
 generated to reflect Canarsie's highly diverse community. `hero-building.jpg`
-is a concept rendering, not a real building photograph.
+is a concept rendering, not a real building photograph. `wellness-workshop.jpg` had incidental AI-generated signage text digitally removed.
 
 ## Items to confirm before launch
 

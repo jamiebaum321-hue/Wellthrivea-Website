@@ -7,33 +7,33 @@ import { CareersForm } from "@/components/site/careers-form";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Providers are coming soon — Wellthrivea Urgent Care is building its founding clinical and front-office team in Brooklyn. Learn about upcoming roles and express interest.",
+    "Providers are coming soon — Wellthrivea Health & Wellness Network is building its founding care team in Brooklyn: nurses, NPs, home health aides, behavioral health clinicians, and more.",
 };
 
 const ROLES = [
   {
-    title: "Physicians (MD/DO)",
-    body: "Urgent-care or family/emergency-medicine trained physicians licensed in New York.",
-  },
-  {
-    title: "Physician Assistants",
-    body: "NCCPA-certified PAs with urgent care, primary care, or emergency experience.",
+    title: "Registered Nurses",
+    body: "NY-licensed RNs for home care visits, wellness services, and care coordination — experience with home health a plus.",
   },
   {
     title: "Nurse Practitioners",
-    body: "NY-licensed NPs comfortable with walk-in acuity and a collaborative team model.",
+    body: "NY-licensed NPs for wellness visits, chronic disease management, and telemedicine, in a collaborative team model.",
   },
   {
-    title: "Registered Nurses",
-    body: "RNs who love variety, triage, and patient education.",
+    title: "Home Health Aides & LPNs",
+    body: "Certified HHAs and LPNs who bring skill and heart into patients' homes across the Brooklyn area.",
   },
   {
-    title: "Medical Assistants",
-    body: "Certified MAs for intake, vitals, point-of-care testing, and keeping the day moving.",
+    title: "Behavioral Health Clinicians",
+    body: "Licensed therapists, social workers (LCSW/LMSW), and counselors for our judgment-free behavioral health program.",
   },
   {
-    title: "Front Office & Patient Experience",
-    body: "The first faces of Wellthrivea — warm, organized, and multilingual candidates especially welcome.",
+    title: "Wellness & Nutrition Educators",
+    body: "Community health educators and nutrition professionals for wellness visits, workshops, and borough outreach.",
+  },
+  {
+    title: "Care Coordination & Patient Experience",
+    body: "The first voices of Wellthrivea — warm, organized, and multilingual candidates especially welcome.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function CareersPage() {
             Builders — wanted now.
           </>
         }
-        sub="Wellthrivea Urgent Care is hiring the founding team for our new Canarsie, Brooklyn clinic. Join us early enough to shape how a clinic should feel — for patients and for the people who care for them."
+        sub="Wellthrivea Health & Wellness Network is hiring the founding team for our Brooklyn home base, home care service, and virtual programs. Join early enough to shape how a care network should feel — for patients and for the people who care for them."
       />
 
       <section className="py-20">
@@ -59,12 +59,12 @@ export default function CareersPage() {
               Why join us
             </span>
             <h2 className="mt-4 text-3xl font-extrabold md:text-4xl">
-              Help design the clinic you always wished you worked in.
+              Help design the care network you always wished you worked in.
             </h2>
             <ul className="mt-6 space-y-3.5">
               {[
-                ["A brand-new building:", "modern exam rooms, natural light, and equipment chosen by the team that will use it."],
-                ["Technology that helps, not hinders:", "digital check-in and smart rooms designed to reduce administrative load, not add to it."],
+                ["A brand-new home base:", "a modern Brooklyn space with natural light, plus home-care and virtual programs built around the team that runs them."],
+                ["Technology that helps, not hinders:", "telemedicine, digital scheduling, and smart records designed to reduce administrative load, not add to it."],
                 ["Community-first mission:", "local outreach across the five boroughs, with local hiring as a founding principle."],
                 ["Founding-team voice:", "early hires help set clinical workflows, culture, and standards."],
               ].map(([strong, rest]) => (
