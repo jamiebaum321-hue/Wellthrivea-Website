@@ -9,7 +9,8 @@ components. See README.md for the full site map and compliance rules.
 
 - NEVER use the words "integrated provider", "integrated care", or similar
   "integrated" phrasing — the health department required its removal.
-- NEVER publish a street address until the clinic announces one.
+- NEVER publish a street address, and NEVER name the neighborhood (no
+  "Canarsie") — the location stays "Brooklyn" until the client says otherwise.
 - NEVER add testimonials, reviews, guarantees, superiority claims ("best",
   "#1", "top", "leading"), wait-time promises, or unqualified price claims.
 - NEVER imply emergency-department or urgent-care status; Wellthrivea is a
@@ -18,6 +19,8 @@ components. See README.md for the full site map and compliance rules.
 - NEVER add tracking scripts (analytics, pixels, session replay, chat) without
   a documented HIPAA review + BAA; update the Digital Privacy Policy if added.
 - Services/hours/providers/plans are "planned" until confirmed at launch.
+- Disclose AI-assisted imagery/copy per `/legal/ai-transparency`; keep that
+  page accurate when images or workflows change.
 
 ## Conventions
 

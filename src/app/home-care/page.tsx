@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 import { Notice } from "@/components/site/notice";
 
 export const metadata: Metadata = {
@@ -37,6 +38,25 @@ const SERVICES = [
     body: "Training and respite guidance for the family members who carry so much of the care load.",
   },
 ];
+
+const PAGE_FAQ = [
+  {
+    value: "area",
+    title: "Where will home care be available?",
+    content: <p>Home care is planned to begin in the Brooklyn area, with the exact service map published at launch. Virtual support is planned across the greater five boroughs.</p>,
+  },
+  {
+    value: "who",
+    title: "Who will come to my home?",
+    content: <p>Licensed and certified members of our care team — such as registered nurses, licensed practical nurses, and home health aides. Every team member is verified before they are published on this site or sent to a home.</p>,
+  },
+  {
+    value: "cost",
+    title: "How much will home care cost?",
+    content: <p>Costs depend on your health plan and the services you need. We will publish participating plans before launch, and self-pay patients can request a Good Faith Estimate of expected charges in advance.</p>,
+  },
+] as const;
+
 
 export default function HomeCarePage() {
   return (
@@ -119,8 +139,8 @@ export default function HomeCarePage() {
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2">
           <Image
-            src="/img/canarsie-street.jpg"
-            alt="Sunny residential street in Canarsie, Brooklyn, where Wellthrivea's home care service will begin"
+            src="/img/community-street.jpg"
+            alt="Sunny residential Brooklyn street where Wellthrivea's home care service will begin"
             width={1344}
             height={752}
             className="order-2 rounded-3xl shadow-xl lg:order-1"
@@ -184,6 +204,7 @@ export default function HomeCarePage() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about home care" />
     </>
   );
 }

@@ -11,6 +11,7 @@ const LEGAL_LINKS = [
   { href: "/legal/anonymous-hotline", label: "Anonymous Hotline" },
   { href: "/legal/accessibility", label: "Accessibility" },
   { href: "/legal/terms-of-use", label: "Terms of Use & Medical Disclaimer" },
+  { href: "/legal/ai-transparency", label: "AI Disclaimers & Transparency" },
 ];
 
 export function SiteFooter() {
@@ -55,7 +56,7 @@ export function SiteFooter() {
             <p className="max-w-sm text-sm">
               Coordinated Care. Better Health. Home care, wellness programs,
               behavioral health support, and telemedicine — coming soon to
-              Canarsie, Brooklyn, and serving the greater five boroughs through
+              Brooklyn, and serving the greater five boroughs through
               virtual care and community outreach.
             </p>
             <p className="mt-4 max-w-sm text-xs">
@@ -178,6 +179,24 @@ export function SiteFooter() {
           <p className="mt-4 text-center text-xs text-sky-300/60">
             © {new Date().getFullYear()} Wellthrivea. All rights reserved.
           </p>
+
+          <div className="mt-6 flex justify-center border-t border-white/10 pt-6">
+            <a
+              href="https://www.netsysgroup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-wrap items-center justify-center gap-2.5 text-xs text-sky-300/70 transition-colors hover:text-white"
+            >
+              <span>Site designed &amp; managed by</span>
+              <Image
+                src="/img/netsys-logo.png"
+                alt="The NetSys Group"
+                width={560}
+                height={148}
+                className="h-8 w-auto opacity-90 transition-opacity group-hover:opacity-100 sm:h-9"
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </>

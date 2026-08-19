@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Wellthrivea Health & Wellness Network",
   },
   description:
-    "Wellthrivea Health & Wellness Network — home care, wellness programs, behavioral health support, and telemedicine. Coming soon to Canarsie, Brooklyn, and serving the greater five boroughs through virtual care and community outreach.",
+    "Wellthrivea Health & Wellness Network — home care, wellness programs, behavioral health support, and telemedicine. Coming soon to Brooklyn, and serving the greater five boroughs through virtual care and community outreach.",
   openGraph: {
     siteName: "Wellthrivea Health & Wellness Network",
     type: "website",

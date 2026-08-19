@@ -13,6 +13,7 @@ import {
   Video,
 } from "lucide-react";
 import { PageHead } from "@/components/site/page-head";
+import { PageFaq } from "@/components/site/page-faq";
 import { Notice } from "@/components/site/notice";
 
 export const metadata: Metadata = {
@@ -80,6 +81,25 @@ const SERVICES = [
     body: "Practical nutrition guidance and education that fits real kitchens, real budgets, and real Brooklyn life.",
   },
 ];
+
+const PAGE_FAQ = [
+  {
+    value: "planned",
+    title: "Why does everything say “planned”?",
+    content: <p>Because it is. Wellthrivea has not begun providing services yet, and New York advertising rules require that we not present a service as available until it actually is. Each service is confirmed, with its details published here, before it launches.</p>,
+  },
+  {
+    value: "referral",
+    title: "Will I need a referral?",
+    content: <p>Referral requirements vary by service and by health plan. We will publish exactly what each service requires — including any referral, prescription, or eligibility criteria — before that service launches.</p>,
+  },
+  {
+    value: "together",
+    title: "Do these services work together?",
+    content: <p>That is the whole idea. With your consent, your care team shares one picture of your care, so a wellness visit, a home-care plan, and a telemedicine follow-up are not three disconnected conversations.</p>,
+  },
+] as const;
+
 
 export default function ServicesPage() {
   return (
@@ -192,6 +212,7 @@ export default function ServicesPage() {
           </Link>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQ} title="Questions about our services" />
     </>
   );
 }

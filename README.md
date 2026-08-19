@@ -2,9 +2,9 @@
 
 A modern, compliance-first website for **Wellthrivea Health & Wellness
 Network** ("Coordinated Care. Better Health.") — home care, wellness programs,
-behavioral health support, and telemedicine, coming soon to Canarsie,
-Brooklyn, and serving the greater five boroughs through virtual care and
-community outreach.
+behavioral health support, and telemedicine, coming soon to Brooklyn and
+serving the greater five boroughs through virtual care and community
+outreach.
 
 Built with **Next.js 16 (App Router) + Tailwind CSS v4 + shadcn/ui**, using
 components from the [Watermelon UI](https://registry.watermelon.sh) shadcn
@@ -25,7 +25,7 @@ npm run start   # serve the production build
 | --- | --- |
 | Core | `/` `/about` `/mission` `/services` `/home-care` `/behavioral-health` `/wellness` `/technology` `/locations` `/careers` `/insurance` `/faq` `/contact` |
 | Blog | `/blog` plus 9 educational articles at `/blog/[slug]` |
-| Legal | `/legal/digital-privacy-policy` `/legal/no-surprises-act` `/legal/notice-of-privacy-practices` `/legal/sms-terms` `/legal/non-discrimination` `/legal/patient-rights` `/legal/anonymous-hotline` `/legal/accessibility` `/legal/terms-of-use` |
+| Legal | `/legal/digital-privacy-policy` `/legal/no-surprises-act` `/legal/notice-of-privacy-practices` `/legal/sms-terms` `/legal/non-discrimination` `/legal/patient-rights` `/legal/anonymous-hotline` `/legal/accessibility` `/legal/terms-of-use` `/legal/ai-transparency` |
 
 ## Compliance posture (NY health services)
 
@@ -35,8 +35,9 @@ Key decisions — please keep these intact when editing:
 - **No "integrated provider" / "integrated care" language anywhere.** The
   NY health department required its removal from the prior site. The brand
   tagline is "Coordinated Care. Better Health." (from the current logo).
-- **No street address is published.** The site says "coming soon to Canarsie,
-  Brooklyn" and "serving the greater five boroughs through outreach" only.
+- **No street address is published, and no neighborhood is named.** The site
+  says "coming soon to Brooklyn" and "serving the greater five boroughs"
+  only — keep the location ambiguous until the client announces it.
 - **No testimonials, no guarantees, no superiority claims** ("best", "#1",
   "top"), no wait-time promises, no price claims — per NY Education Law
   § 6530(27) and Board of Regents Part 29.1.
@@ -77,11 +78,11 @@ and `src/components/base-variants/` and adapted (shadcn own-the-code model):
 | `blog-2` | Blog card grid (`/blog`) |
 | `filter-disclosure` | Blog topic filter |
 | `continuous-pagination` | Blog pager |
-| `accordion-5` | FAQ accordions (home + `/faq`) |
+| `accordion-5` | FAQ accordions (home, `/faq`, and per-page `PageFaq` blocks) |
 | `newsletter-3` | Email capture bands |
 | `checkbox-16` | Consent checkboxes on forms |
 | `floating-input` | Form inputs (contact, careers) |
-| `carousel-navigator` | Facility tour carousel (home) |
+| `carousel-navigator` | Installed and available; not currently placed (facility tour removed at client request) |
 | `split-button` | "Explore Wellthrivea" hero quick-nav |
 | `inline-action` | Copy-email action (contact) |
 
@@ -92,10 +93,14 @@ Palette sampled from the Wellthrivea logo: leaf green `#48a830`, medical blue
 `src/app/globals.css` (`--color-brand-*`). Headings use Plus Jakarta Sans;
 body text uses Inter (both self-hosted via `next/font`).
 
-Photography in `public/img/` was generated with the OpenAI GPT Image 2 engine
-(via Higgsfield) using the brand palette; images depicting people were
-generated to reflect Canarsie's highly diverse community. `hero-building.jpg`
-is a concept rendering, not a real building photograph. `wellness-workshop.jpg` had incidental AI-generated signage text digitally removed.
+Brand photography in `public/img/` (`hero-building`, `lobby`, `exam-room`,
+`team`, `community-street`) and the logo files (`logo-lockup.png`,
+`logo-mark.png`, favicons) are **client-supplied assets**. `hero-building.jpg`
+is a concept rendering of the future location, not a photograph of an existing
+building. `telehealth.jpg`, `child-care.jpg`, `tech-illustration.jpg`, and
+`wellness-workshop.jpg` are AI-generated placeholders pending client replacement.
+The `/legal/ai-transparency` page discloses that some imagery is illustrative —
+keep that page accurate as images are swapped.
 
 ## Items to confirm before launch
 
