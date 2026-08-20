@@ -25,13 +25,13 @@ export default function SplitButton({
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="relative flex min-h-[60px] w-full items-center justify-center font-semibold">
+    <div className="relative flex min-h-[60px] w-full items-center justify-start font-semibold">
       {/* MAIN BUTTON */}
       <motion.button
         layout
         transition={SPRING}
         onClick={() => setOpen(true)}
-        className="absolute z-10 rounded-full bg-neutral-200 whitespace-nowrap px-8 py-3 tracking-tight text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+        className="absolute left-0 z-10 rounded-full bg-neutral-200 whitespace-nowrap px-7 py-3 tracking-tight text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
         initial={false}
         animate={{
           scaleX: open ? 1.5 : 1,
@@ -50,7 +50,7 @@ export default function SplitButton({
       <motion.div
         layout
         transition={SPRING}
-        className="absolute z-0 flex items-center justify-center gap-2"
+        className="absolute left-0 z-0 flex items-center justify-start gap-1.5 sm:gap-2"
         initial={false}
         animate={{
           scaleX: open ? 1 : 0.2,
@@ -63,7 +63,7 @@ export default function SplitButton({
         {/* BACK BUTTON */}
         <motion.button
           onClick={() => setOpen(false)}
-          className="flex items-center justify-center rounded-full bg-neutral-200 p-3 tracking-tight text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+          className="flex shrink-0 items-center justify-center rounded-full bg-neutral-200 p-2 tracking-tight text-neutral-700 sm:p-2.5 dark:bg-neutral-800 dark:text-neutral-200"
           whileHover={{ scale: 1 }}
           whileTap={{ scale: 1.15 }}
         >
@@ -78,7 +78,7 @@ export default function SplitButton({
                 setOpen(false);
                 onSelect?.(name);
               }}
-              className="rounded-full bg-neutral-200 px-6 py-3 tracking-tight text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+              className="rounded-full bg-neutral-200 px-3 py-2 text-xs whitespace-nowrap tracking-tight text-neutral-700 sm:px-4 sm:py-2.5 sm:text-sm dark:bg-neutral-800 dark:text-neutral-200"
               whileHover={{ scale: 1 }}
               whileTap={{ scale: 1.05 }}
             >
