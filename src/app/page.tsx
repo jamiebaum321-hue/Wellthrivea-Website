@@ -140,14 +140,14 @@ export default function HomePage() {
               and the greater five boroughs through virtual care
               and community outreach.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-col items-start gap-2">
               <Link
                 href="/contact"
                 className="brand-gradient rounded-full px-7 py-3.5 font-heading font-bold text-white shadow-[0_10px_26px_rgba(0,114,188,.35)] transition-[filter] hover:brightness-110"
               >
                 Get launch updates
               </Link>
-              <div className="min-w-[260px]">
+              <div className="w-full max-w-lg">
                 <ExploreSplit />
               </div>
             </div>
